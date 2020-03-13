@@ -1,0 +1,858 @@
+Mar 13, 2020 3:30:24 PM org.apache.karaf.main.Main launch
+INFO: Installing and starting initial bundles
+Mar 13, 2020 3:30:24 PM org.apache.karaf.main.Main launch
+INFO: All initial bundles installed and set to start
+Mar 13, 2020 3:30:24 PM org.apache.karaf.main.lock.SimpleFileLock lock
+INFO: Trying to lock /Users/chu/Sonoma/apache-karaf-4.2.8/lock
+Mar 13, 2020 3:30:24 PM org.apache.karaf.main.lock.SimpleFileLock lock
+INFO: Lock acquired
+Mar 13, 2020 3:30:24 PM org.apache.karaf.main.Main$KarafLockCallback lockAcquired
+INFO: Lock acquired. Setting startlevel to 100
+2020-03-13T15:30:25,090 | INFO  | CM Configuration Updater (Update: pid=org.ops4j.pax.logging) | EventAdminConfigurationNotifier  | 7 - org.ops4j.pax.logging.pax-logging-log4j2 - 1.11.4 | Sending Event Admin notification (configuration successful) to org/ops4j/pax/logging/Configuration
+2020-03-13T15:30:25,728 | INFO  | activator-1-thread-2 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Adding features: framework/[4.2.8,4.2.8],kar/[4.2.8,4.2.8],service/[4.2.8,4.2.8],config/[4.2.8,4.2.8],diagnostic/[4.2.8,4.2.8],package/[4.2.8,4.2.8],shell/[4.2.8,4.2.8],feature/[4.2.8,4.2.8],wrap/[2.6.2,2.6.2],jaas/[4.2.8,4.2.8],deployer/[4.2.8,4.2.8],ssh/[4.2.8,4.2.8],management/[4.2.8,4.2.8],system/[4.2.8,4.2.8],log/[4.2.8,4.2.8],eventadmin/[4.2.8,4.2.8],bundle/[4.2.8,4.2.8],instance/[4.2.8,4.2.8]
+2020-03-13T15:30:25,898 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Changes to perform:
+2020-03-13T15:30:25,898 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   Region: root
+2020-03-13T15:30:25,898 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |     Bundles to install:
+2020-03-13T15:30:25,898 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.aries.jmx/org.apache.aries.jmx.api/1.1.5
+2020-03-13T15:30:25,898 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.aries.jmx/org.apache.aries.jmx.core/1.1.8
+2020-03-13T15:30:25,899 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.aries.jmx/org.apache.aries.jmx.whiteboard/1.2.0
+2020-03-13T15:30:25,899 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.aries/org.apache.aries.util/1.1.3
+2020-03-13T15:30:25,899 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.bundle/org.apache.karaf.bundle.core/4.2.8
+2020-03-13T15:30:25,899 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.config/org.apache.karaf.config.core/4.2.8
+2020-03-13T15:30:25,899 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.deployer/org.apache.karaf.deployer.features/4.2.8
+2020-03-13T15:30:25,899 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.deployer/org.apache.karaf.deployer.kar/4.2.8
+2020-03-13T15:30:25,899 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.deployer/org.apache.karaf.deployer.wrap/4.2.8
+2020-03-13T15:30:25,900 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.diagnostic/org.apache.karaf.diagnostic.core/4.2.8
+2020-03-13T15:30:25,900 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf/org.apache.karaf.event/4.2.8
+2020-03-13T15:30:25,900 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.features/org.apache.karaf.features.command/4.2.8
+2020-03-13T15:30:25,900 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.instance/org.apache.karaf.instance.core/4.2.8
+2020-03-13T15:30:25,900 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.jaas/org.apache.karaf.jaas.command/4.2.8
+2020-03-13T15:30:25,900 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.jaas/org.apache.karaf.jaas.config/4.2.8
+2020-03-13T15:30:25,900 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.jaas/org.apache.karaf.jaas.modules/4.2.8
+2020-03-13T15:30:25,901 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.kar/org.apache.karaf.kar.core/4.2.8
+2020-03-13T15:30:25,901 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.log/org.apache.karaf.log.core/4.2.8
+2020-03-13T15:30:25,901 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.management/org.apache.karaf.management.server/4.2.8
+2020-03-13T15:30:25,901 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.package/org.apache.karaf.package.core/4.2.8
+2020-03-13T15:30:25,901 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.service/org.apache.karaf.service.core/4.2.8
+2020-03-13T15:30:25,901 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.shell/org.apache.karaf.shell.commands/4.2.8
+2020-03-13T15:30:25,901 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.shell/org.apache.karaf.shell.core/4.2.8
+2020-03-13T15:30:25,902 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.shell/org.apache.karaf.shell.ssh/4.2.8
+2020-03-13T15:30:25,902 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.system/org.apache.karaf.system.core/4.2.8
+2020-03-13T15:30:25,902 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.not-yet-commons-ssl/0.3.11_1
+2020-03-13T15:30:25,902 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.sshd/sshd-core/1.7.0
+2020-03-13T15:30:25,902 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.jline/jline-builtins/3.13.2
+2020-03-13T15:30:25,902 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.jline/jline-reader/3.13.2
+2020-03-13T15:30:25,902 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.jline/jline-terminal/3.13.2
+2020-03-13T15:30:25,902 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.jline/jline-terminal-jansi/3.13.2
+2020-03-13T15:30:25,902 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.ops4j.pax.url/pax-url-wrap/2.6.2/jar/uber
+2020-03-13T15:30:25,905 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Installing bundles:
+2020-03-13T15:30:25,905 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.aries.jmx/org.apache.aries.jmx.api/1.1.5
+2020-03-13T15:30:25,908 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.aries.jmx/org.apache.aries.jmx.core/1.1.8
+2020-03-13T15:30:25,912 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.aries.jmx/org.apache.aries.jmx.whiteboard/1.2.0
+2020-03-13T15:30:25,914 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.aries/org.apache.aries.util/1.1.3
+2020-03-13T15:30:25,917 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.bundle/org.apache.karaf.bundle.core/4.2.8
+2020-03-13T15:30:25,920 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.config/org.apache.karaf.config.core/4.2.8
+2020-03-13T15:30:25,925 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.deployer/org.apache.karaf.deployer.features/4.2.8
+2020-03-13T15:30:25,928 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.deployer/org.apache.karaf.deployer.kar/4.2.8
+2020-03-13T15:30:25,930 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.deployer/org.apache.karaf.deployer.wrap/4.2.8
+2020-03-13T15:30:25,933 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.diagnostic/org.apache.karaf.diagnostic.core/4.2.8
+2020-03-13T15:30:25,937 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf/org.apache.karaf.event/4.2.8
+2020-03-13T15:30:25,940 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.features/org.apache.karaf.features.command/4.2.8
+2020-03-13T15:30:25,944 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.instance/org.apache.karaf.instance.core/4.2.8
+2020-03-13T15:30:25,949 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.jaas/org.apache.karaf.jaas.command/4.2.8
+2020-03-13T15:30:25,953 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.jaas/org.apache.karaf.jaas.config/4.2.8
+2020-03-13T15:30:25,956 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.jaas/org.apache.karaf.jaas.modules/4.2.8
+2020-03-13T15:30:25,970 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.kar/org.apache.karaf.kar.core/4.2.8
+2020-03-13T15:30:25,974 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.log/org.apache.karaf.log.core/4.2.8
+2020-03-13T15:30:25,978 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.management/org.apache.karaf.management.server/4.2.8
+2020-03-13T15:30:25,981 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.package/org.apache.karaf.package.core/4.2.8
+2020-03-13T15:30:25,985 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.service/org.apache.karaf.service.core/4.2.8
+2020-03-13T15:30:25,989 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.shell/org.apache.karaf.shell.commands/4.2.8
+2020-03-13T15:30:25,993 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.shell/org.apache.karaf.shell.core/4.2.8
+2020-03-13T15:30:26,003 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.shell/org.apache.karaf.shell.ssh/4.2.8
+2020-03-13T15:30:26,008 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.system/org.apache.karaf.system.core/4.2.8
+2020-03-13T15:30:26,012 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.not-yet-commons-ssl/0.3.11_1
+2020-03-13T15:30:26,018 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.sshd/sshd-core/1.7.0
+2020-03-13T15:30:26,035 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.jline/jline-builtins/3.13.2
+2020-03-13T15:30:26,039 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.jline/jline-reader/3.13.2
+2020-03-13T15:30:26,043 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.jline/jline-terminal/3.13.2
+2020-03-13T15:30:26,046 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.jline/jline-terminal-jansi/3.13.2
+2020-03-13T15:30:26,049 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.ops4j.pax.url/pax-url-wrap/2.6.2/jar/uber
+2020-03-13T15:30:26,190 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Starting bundles:
+2020-03-13T15:30:26,190 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.ops4j.pax.url.wrap/2.6.2
+2020-03-13T15:30:26,196 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.aries.util/1.1.3
+2020-03-13T15:30:26,197 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.deployer.wrap/4.2.8
+2020-03-13T15:30:26,202 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.deployer.kar/4.2.8
+2020-03-13T15:30:26,209 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.deployer.features/4.2.8
+2020-03-13T15:30:26,225 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.jline.terminal/3.13.2
+2020-03-13T15:30:26,226 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.jline.reader/3.13.2
+2020-03-13T15:30:26,227 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.jline.builtins/3.13.2
+2020-03-13T15:30:26,229 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.shell.core/4.2.8
+2020-03-13T15:30:26,268 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.deployer.kar/4.2.8
+2020-03-13T15:30:26,271 | INFO  | features-3-thread-1 | Activator                        | 34 - org.apache.karaf.shell.core - 4.2.8 | Not starting local console. To activate set karaf.startLocalConsole=true
+2020-03-13T15:30:26,272 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.log.core/4.2.8
+2020-03-13T15:30:26,291 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.log.core/4.2.8
+2020-03-13T15:30:26,295 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.servicemix.bundles.not-yet-commons-ssl/0.3.11.1
+2020-03-13T15:30:26,296 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.diagnostic.core/4.2.8
+2020-03-13T15:30:26,302 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.diagnostic.core/4.2.8
+2020-03-13T15:30:26,303 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.service.core/4.2.8
+2020-03-13T15:30:26,312 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.service.core/4.2.8
+2020-03-13T15:30:26,313 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.aries.jmx.whiteboard/1.2.0
+2020-03-13T15:30:26,317 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.jaas.config/4.2.8
+2020-03-13T15:30:26,325 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.jaas.modules/4.2.8
+2020-03-13T15:30:26,332 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.jaas.command/4.2.8
+2020-03-13T15:30:26,346 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.jaas.command/4.2.8
+2020-03-13T15:30:26,348 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Updating commands for bundle org.apache.karaf.jaas.command/4.2.8
+2020-03-13T15:30:26,350 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Updating commands for bundle org.apache.karaf.jaas.command/4.2.8
+2020-03-13T15:30:26,351 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.aries.jmx.api/1.1.5
+2020-03-13T15:30:26,351 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.aries.jmx.core/1.1.8
+2020-03-13T15:30:26,355 | INFO  | features-3-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Starting JMX OSGi agent
+2020-03-13T15:30:26,368 | INFO  | features-3-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering MBean with ObjectName [osgi.compendium:service=cm,version=1.3,framework=org.apache.felix.framework,uuid=0d568b6c-e313-4319-8e8a-770458f34db5] for service with service.id [14]
+2020-03-13T15:30:26,370 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.features.command/4.2.8
+2020-03-13T15:30:26,383 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.features.command/4.2.8
+2020-03-13T15:30:26,384 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.instance.core/4.2.8
+2020-03-13T15:30:26,402 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.instance.core/4.2.8
+2020-03-13T15:30:26,403 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.package.core/4.2.8
+2020-03-13T15:30:26,410 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.package.core/4.2.8
+2020-03-13T15:30:26,411 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.shell.commands/4.2.8
+2020-03-13T15:30:26,420 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.shell.commands/4.2.8
+2020-03-13T15:30:26,421 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.config.core/4.2.8
+2020-03-13T15:30:26,436 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.config.core/4.2.8
+2020-03-13T15:30:26,454 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.management.server/4.2.8
+2020-03-13T15:30:26,459 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.system.core/4.2.8
+2020-03-13T15:30:26,467 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.system.core/4.2.8
+2020-03-13T15:30:26,468 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.bundle.core/4.2.8
+2020-03-13T15:30:26,494 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.bundle.core/4.2.8
+2020-03-13T15:30:26,495 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.sshd.core/1.7.0
+2020-03-13T15:30:26,496 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.kar.core/4.2.8
+2020-03-13T15:30:26,504 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.kar.core/4.2.8
+2020-03-13T15:30:26,505 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.wiring.BundleWiringStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@4a12b588 with name osgi.core:type=wiringState,version=1.1,framework=org.apache.felix.framework,uuid=0d568b6c-e313-4319-8e8a-770458f34db5
+2020-03-13T15:30:26,505 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.shell.ssh/4.2.8
+2020-03-13T15:30:26,506 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.FrameworkMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@4a12b588 with name osgi.core:type=framework,version=1.7,framework=org.apache.felix.framework,uuid=0d568b6c-e313-4319-8e8a-770458f34db5
+2020-03-13T15:30:26,506 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.PackageStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@4a12b588 with name osgi.core:type=packageState,version=1.5,framework=org.apache.felix.framework,uuid=0d568b6c-e313-4319-8e8a-770458f34db5
+2020-03-13T15:30:26,507 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.BundleStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@4a12b588 with name osgi.core:type=bundleState,version=1.7,framework=org.apache.felix.framework,uuid=0d568b6c-e313-4319-8e8a-770458f34db5
+2020-03-13T15:30:26,509 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.service.cm.ConfigurationAdminMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@4a12b588 with name osgi.compendium:service=cm,version=1.3,framework=org.apache.felix.framework,uuid=0d568b6c-e313-4319-8e8a-770458f34db5
+2020-03-13T15:30:26,510 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.ServiceStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@4a12b588 with name osgi.core:type=serviceState,version=1.7,framework=org.apache.felix.framework,uuid=0d568b6c-e313-4319-8e8a-770458f34db5
+2020-03-13T15:30:26,533 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Command registration delayed for bundle org.apache.karaf.shell.ssh/4.2.8. Missing service: [org.apache.sshd.server.SshServer]
+2020-03-13T15:30:26,533 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.event/4.2.8
+2020-03-13T15:30:26,538 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.event/4.2.8
+2020-03-13T15:30:26,540 | INFO  | features-3-thread-1 | Activator                        | 18 - org.apache.karaf.deployer.features - 4.2.8 | Deployment finished. Registering FeatureDeploymentListener
+2020-03-13T15:30:26,634 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Done.
+2020-03-13T15:30:26,683 | INFO  | activator-1-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.shell.ssh/4.2.8
+2020-03-13T15:30:26,714 | WARN  | activator-1-thread-1 | Activator                        | 35 - org.apache.karaf.shell.ssh - 4.2.8 | Exception caught while starting SSH server
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_222]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_222]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_222]
+	at sun.nio.ch.AsynchronousServerSocketChannelImpl.bind(AsynchronousServerSocketChannelImpl.java:162) ~[?:1.8.0_222]
+	at org.apache.sshd.common.io.nio2.Nio2Acceptor.bind(Nio2Acceptor.java:63) ~[!/:1.7.0]
+	at org.apache.sshd.common.io.nio2.Nio2Acceptor.bind(Nio2Acceptor.java:87) ~[!/:1.7.0]
+	at org.apache.sshd.server.SshServer.start(SshServer.java:324) ~[!/:1.7.0]
+	at org.apache.karaf.shell.ssh.Activator.createAndRunSshServer(Activator.java:126) [!/:?]
+	at org.apache.karaf.shell.ssh.Activator.doStart(Activator.java:113) [!/:?]
+	at org.apache.karaf.util.tracker.BaseActivator.run(BaseActivator.java:312) [!/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_222]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_222]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_222]
+Mar 13, 2020 3:42:31 PM org.apache.karaf.main.lock.SimpleFileLock lock
+INFO: Trying to lock /Users/chu/Sonoma/apache-karaf-4.2.8/lock
+Mar 13, 2020 3:42:31 PM org.apache.karaf.main.lock.SimpleFileLock lock
+INFO: Lock acquired
+Mar 13, 2020 3:42:31 PM org.apache.karaf.main.Main$KarafLockCallback lockAcquired
+INFO: Lock acquired. Setting startlevel to 100
+2020-03-13T15:42:32,017 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.ops4j.pax.logging]) | EventAdminConfigurationNotifier  | 7 - org.ops4j.pax.logging.pax-logging-log4j2 - 1.11.4 | Sending Event Admin notification (configuration successful) to org/ops4j/pax/logging/Configuration
+2020-03-13T15:42:32,041 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Starting JMX OSGi agent
+2020-03-13T15:42:32,050 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering MBean with ObjectName [osgi.compendium:service=cm,version=1.3,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902] for service with service.id [15]
+2020-03-13T15:42:32,154 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.PackageStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1b469949 with name osgi.core:type=packageState,version=1.5,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,156 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.FrameworkMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1b469949 with name osgi.core:type=framework,version=1.7,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,157 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.BundleStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1b469949 with name osgi.core:type=bundleState,version=1.7,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,159 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.wiring.BundleWiringStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1b469949 with name osgi.core:type=wiringState,version=1.1,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,159 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.ServiceStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1b469949 with name osgi.core:type=serviceState,version=1.7,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,160 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.service.cm.ConfigurationAdminMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1b469949 with name osgi.compendium:service=cm,version=1.3,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,192 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.bundle.core/4.2.8
+2020-03-13T15:42:32,201 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.config.core/4.2.8
+2020-03-13T15:42:32,218 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.deployer.kar/4.2.8
+2020-03-13T15:42:32,219 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.diagnostic.core/4.2.8
+2020-03-13T15:42:32,228 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Command registration delayed for bundle org.apache.karaf.features.command/4.2.8. Missing service: [org.apache.karaf.features.FeaturesService, org.ops4j.pax.url.mvn.MavenResolver, org.eclipse.equinox.region.RegionDigraph]
+2020-03-13T15:42:32,235 | INFO  | activator-1-thread-2 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.framework.PackageStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1b469949 with name osgi.core:type=packageState,version=1.5,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,235 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.instance.core/4.2.8
+2020-03-13T15:42:32,235 | INFO  | activator-1-thread-2 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.framework.FrameworkMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1b469949 with name osgi.core:type=framework,version=1.7,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,235 | INFO  | activator-1-thread-2 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.framework.BundleStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1b469949 with name osgi.core:type=bundleState,version=1.7,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,236 | INFO  | activator-1-thread-2 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.framework.wiring.BundleWiringStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1b469949 with name osgi.core:type=wiringState,version=1.1,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,236 | INFO  | activator-1-thread-2 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.framework.ServiceStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1b469949 with name osgi.core:type=serviceState,version=1.7,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,237 | INFO  | activator-1-thread-2 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.service.cm.ConfigurationAdminMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@1b469949 with name osgi.compendium:service=cm,version=1.3,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,238 | WARN  | activator-1-thread-2 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Task rejected for JMX Notification dispatch of event [org.osgi.framework.ServiceEvent[source=[javax.management.MBeanServer]]] - Dispatcher may have been shutdown
+2020-03-13T15:42:32,245 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.jaas.command/4.2.8
+2020-03-13T15:42:32,246 | INFO  | activator-1-thread-2 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.PackageStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@9816ca1 with name osgi.core:type=packageState,version=1.5,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,247 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Updating commands for bundle org.apache.karaf.jaas.command/4.2.8
+2020-03-13T15:42:32,247 | INFO  | activator-1-thread-2 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.FrameworkMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@9816ca1 with name osgi.core:type=framework,version=1.7,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,247 | INFO  | activator-1-thread-2 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.BundleStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@9816ca1 with name osgi.core:type=bundleState,version=1.7,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,248 | INFO  | activator-1-thread-2 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.wiring.BundleWiringStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@9816ca1 with name osgi.core:type=wiringState,version=1.1,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,248 | INFO  | activator-1-thread-2 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.ServiceStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@9816ca1 with name osgi.core:type=serviceState,version=1.7,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,248 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Updating commands for bundle org.apache.karaf.jaas.command/4.2.8
+2020-03-13T15:42:32,250 | INFO  | activator-1-thread-2 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.service.cm.ConfigurationAdminMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@9816ca1 with name osgi.compendium:service=cm,version=1.3,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:42:32,257 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Command registration delayed for bundle org.apache.karaf.kar.core/4.2.8. Missing service: [org.apache.karaf.kar.KarService]
+2020-03-13T15:42:32,260 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.log.core/4.2.8
+2020-03-13T15:42:32,262 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.package.core/4.2.8
+2020-03-13T15:42:32,264 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.service.core/4.2.8
+2020-03-13T15:42:32,270 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.shell.commands/4.2.8
+2020-03-13T15:42:32,544 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Command registration delayed for bundle org.apache.karaf.shell.ssh/4.2.8. Missing service: [org.apache.sshd.server.SshServer]
+2020-03-13T15:42:32,550 | INFO  | activator-1-thread-2 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.features.command/4.2.8
+2020-03-13T15:42:32,550 | INFO  | activator-1-thread-2 | Activator                        | 18 - org.apache.karaf.deployer.features - 4.2.8 | Deployment finished. Registering FeatureDeploymentListener
+2020-03-13T15:42:32,550 | INFO  | activator-1-thread-3 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.kar.core/4.2.8
+2020-03-13T15:42:32,555 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.system.core/4.2.8
+2020-03-13T15:42:32,564 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.event/4.2.8
+2020-03-13T15:42:32,700 | INFO  | activator-1-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.shell.ssh/4.2.8
+2020-03-13T15:42:40,581 | INFO  | pipe-feature:install webconsole | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Adding features: webconsole/[4.2.8,4.2.8]
+2020-03-13T15:42:43,977 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Changes to perform:
+2020-03-13T15:42:43,977 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   Region: root
+2020-03-13T15:42:43,978 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |     Bundles to install:
+2020-03-13T15:42:43,978 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:javax.annotation/javax.annotation-api/1.3
+2020-03-13T15:42:43,978 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:javax.servlet/javax.servlet-api/3.1.0
+2020-03-13T15:42:43,978 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.aries.spifly/org.apache.aries.spifly.dynamic.bundle/1.2.3
+2020-03-13T15:42:43,978 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.felix/org.apache.felix.inventory/1.0.6
+2020-03-13T15:42:43,979 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.felix/org.apache.felix.scr/2.1.16
+2020-03-13T15:42:43,979 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.felix/org.apache.felix.webconsole.plugins.ds/2.1.0
+2020-03-13T15:42:43,979 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.felix/org.apache.felix.webconsole.plugins.event/1.1.8
+2020-03-13T15:42:43,979 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.felix/org.apache.felix.webconsole.plugins.memoryusage/1.0.10
+2020-03-13T15:42:43,979 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.geronimo.specs/geronimo-jaspic_1.0_spec/1.1
+2020-03-13T15:42:43,980 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1
+2020-03-13T15:42:43,980 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.http/org.apache.karaf.http.core/4.2.8
+2020-03-13T15:42:43,980 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.scr/org.apache.karaf.scr.management/4.2.8
+2020-03-13T15:42:43,981 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.scr/org.apache.karaf.scr.state/4.2.8
+2020-03-13T15:42:43,981 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.webconsole/org.apache.karaf.webconsole.console/4.2.8
+2020-03-13T15:42:43,982 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.webconsole/org.apache.karaf.webconsole.features/4.2.8
+2020-03-13T15:42:43,982 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.webconsole/org.apache.karaf.webconsole.gogo/4.2.8
+2020-03-13T15:42:43,982 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.webconsole/org.apache.karaf.webconsole.http/4.2.8
+2020-03-13T15:42:43,983 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.webconsole/org.apache.karaf.webconsole.instance/4.2.8
+2020-03-13T15:42:43,984 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.xbean/xbean-bundleutils/4.14
+2020-03-13T15:42:43,984 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.xbean/xbean-finder/4.14
+2020-03-13T15:42:43,985 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-client/9.4.22.v20191022
+2020-03-13T15:42:43,985 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-continuation/9.4.22.v20191022
+2020-03-13T15:42:43,985 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-deploy/9.4.22.v20191022
+2020-03-13T15:42:43,986 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-http/9.4.22.v20191022
+2020-03-13T15:42:43,987 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-io/9.4.22.v20191022
+2020-03-13T15:42:43,987 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-jaas/9.4.22.v20191022
+2020-03-13T15:42:43,988 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-jmx/9.4.22.v20191022
+2020-03-13T15:42:43,988 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-jndi/9.4.22.v20191022
+2020-03-13T15:42:43,989 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-plus/9.4.22.v20191022
+2020-03-13T15:42:43,989 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-proxy/9.4.22.v20191022
+2020-03-13T15:42:43,990 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-rewrite/9.4.22.v20191022
+2020-03-13T15:42:43,990 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-security/9.4.22.v20191022
+2020-03-13T15:42:43,991 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-jaspi/9.4.22.v20191022
+2020-03-13T15:42:43,991 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-server/9.4.22.v20191022
+2020-03-13T15:42:43,992 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-servlet/9.4.22.v20191022
+2020-03-13T15:42:43,992 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-servlets/9.4.22.v20191022
+2020-03-13T15:42:43,992 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-util/9.4.22.v20191022
+2020-03-13T15:42:43,993 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-util-ajax/9.4.22.v20191022
+2020-03-13T15:42:43,993 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-webapp/9.4.22.v20191022
+2020-03-13T15:42:43,994 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.eclipse.jetty/jetty-xml/9.4.22.v20191022
+2020-03-13T15:42:43,994 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.ow2.asm/asm/7.2
+2020-03-13T15:42:43,995 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.ow2.asm/asm-commons/7.2
+2020-03-13T15:42:43,995 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.ow2.asm/asm-tree/7.2
+2020-03-13T15:42:43,996 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.ops4j.pax.web/pax-web-api/7.2.14
+2020-03-13T15:42:43,996 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.ops4j.pax.web/pax-web-jetty/7.2.14
+2020-03-13T15:42:43,996 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.ops4j.pax.web/pax-web-runtime/7.2.14
+2020-03-13T15:42:43,997 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.ops4j.pax.web/pax-web-spi/7.2.14
+2020-03-13T15:42:43,997 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.osgi/org.osgi.util.function/1.0.0
+2020-03-13T15:42:43,998 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.osgi/org.osgi.util.promise/1.0.0
+2020-03-13T15:42:44,000 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Installing bundles:
+2020-03-13T15:42:44,001 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:javax.annotation/javax.annotation-api/1.3
+2020-03-13T15:42:44,004 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:javax.servlet/javax.servlet-api/3.1.0
+2020-03-13T15:42:44,008 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.aries.spifly/org.apache.aries.spifly.dynamic.bundle/1.2.3
+2020-03-13T15:42:44,014 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.felix/org.apache.felix.inventory/1.0.6
+2020-03-13T15:42:44,017 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.felix/org.apache.felix.scr/2.1.16
+2020-03-13T15:42:44,024 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.felix/org.apache.felix.webconsole.plugins.ds/2.1.0
+2020-03-13T15:42:44,027 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.felix/org.apache.felix.webconsole.plugins.event/1.1.8
+2020-03-13T15:42:44,031 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.felix/org.apache.felix.webconsole.plugins.memoryusage/1.0.10
+2020-03-13T15:42:44,036 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.geronimo.specs/geronimo-jaspic_1.0_spec/1.1
+2020-03-13T15:42:44,039 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1
+2020-03-13T15:42:44,044 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.http/org.apache.karaf.http.core/4.2.8
+2020-03-13T15:42:44,059 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.scr/org.apache.karaf.scr.management/4.2.8
+2020-03-13T15:42:44,063 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.scr/org.apache.karaf.scr.state/4.2.8
+2020-03-13T15:42:44,067 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.webconsole/org.apache.karaf.webconsole.console/4.2.8
+2020-03-13T15:42:44,078 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.webconsole/org.apache.karaf.webconsole.features/4.2.8
+2020-03-13T15:42:44,082 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.webconsole/org.apache.karaf.webconsole.gogo/4.2.8
+2020-03-13T15:42:44,086 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.webconsole/org.apache.karaf.webconsole.http/4.2.8
+2020-03-13T15:42:44,090 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.webconsole/org.apache.karaf.webconsole.instance/4.2.8
+2020-03-13T15:42:44,095 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.xbean/xbean-bundleutils/4.14
+2020-03-13T15:42:44,099 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.xbean/xbean-finder/4.14
+2020-03-13T15:42:44,106 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-client/9.4.22.v20191022
+2020-03-13T15:42:44,113 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-continuation/9.4.22.v20191022
+2020-03-13T15:42:44,117 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-deploy/9.4.22.v20191022
+2020-03-13T15:42:44,121 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-http/9.4.22.v20191022
+2020-03-13T15:42:44,126 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-io/9.4.22.v20191022
+2020-03-13T15:42:44,132 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-jaas/9.4.22.v20191022
+2020-03-13T15:42:44,139 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-jmx/9.4.22.v20191022
+2020-03-13T15:42:44,143 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-jndi/9.4.22.v20191022
+2020-03-13T15:42:44,147 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-plus/9.4.22.v20191022
+2020-03-13T15:42:44,151 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-proxy/9.4.22.v20191022
+2020-03-13T15:42:44,156 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-rewrite/9.4.22.v20191022
+2020-03-13T15:42:44,160 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-security/9.4.22.v20191022
+2020-03-13T15:42:44,165 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-jaspi/9.4.22.v20191022
+2020-03-13T15:42:44,170 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-server/9.4.22.v20191022
+2020-03-13T15:42:44,179 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-servlet/9.4.22.v20191022
+2020-03-13T15:42:44,184 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-servlets/9.4.22.v20191022
+2020-03-13T15:42:44,188 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-util/9.4.22.v20191022
+2020-03-13T15:42:44,197 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-util-ajax/9.4.22.v20191022
+2020-03-13T15:42:44,202 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-webapp/9.4.22.v20191022
+2020-03-13T15:42:44,207 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.eclipse.jetty/jetty-xml/9.4.22.v20191022
+2020-03-13T15:42:44,212 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.ow2.asm/asm/7.2
+2020-03-13T15:42:44,216 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.ow2.asm/asm-commons/7.2
+2020-03-13T15:42:44,220 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.ow2.asm/asm-tree/7.2
+2020-03-13T15:42:44,223 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.ops4j.pax.web/pax-web-api/7.2.14
+2020-03-13T15:42:44,227 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.ops4j.pax.web/pax-web-jetty/7.2.14
+2020-03-13T15:42:44,237 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.ops4j.pax.web/pax-web-runtime/7.2.14
+2020-03-13T15:42:44,244 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.ops4j.pax.web/pax-web-spi/7.2.14
+2020-03-13T15:42:44,250 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.osgi/org.osgi.util.function/1.0.0
+2020-03-13T15:42:44,253 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.osgi/org.osgi.util.promise/1.0.0
+2020-03-13T15:42:44,286 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Creating configuration file /Users/chu/Sonoma/apache-karaf-4.2.8/etc/jetty.xml
+2020-03-13T15:42:44,499 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Starting bundles:
+2020-03-13T15:42:44,512 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   javax.servlet-api/3.1.0
+2020-03-13T15:42:44,514 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.felix.webconsole.plugins.event/1.1.8
+2020-03-13T15:42:44,524 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.aries.spifly.dynamic.bundle/1.2.3
+2020-03-13T15:42:44,547 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.util/9.4.22.v20191022
+2020-03-13T15:42:44,549 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.jmx/9.4.22.v20191022
+2020-03-13T15:42:44,550 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.io/9.4.22.v20191022
+2020-03-13T15:42:44,550 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.http/9.4.22.v20191022
+2020-03-13T15:42:44,576 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.server/9.4.22.v20191022
+2020-03-13T15:42:44,577 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.security/9.4.22.v20191022
+2020-03-13T15:42:44,578 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.servlet/9.4.22.v20191022
+2020-03-13T15:42:44,579 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.xml/9.4.22.v20191022
+2020-03-13T15:42:44,580 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.webapp/9.4.22.v20191022
+2020-03-13T15:42:44,581 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.deploy/9.4.22.v20191022
+2020-03-13T15:42:44,582 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.osgi.util.function/1.0.0.201505202023
+2020-03-13T15:42:44,583 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.osgi.util.promise/1.0.0.201505202023
+2020-03-13T15:42:44,583 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.felix.scr/2.1.16
+2020-03-13T15:42:44,609 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.scr.state/4.2.8
+2020-03-13T15:42:44,615 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.scr.state/4.2.8
+2020-03-13T15:42:44,615 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.client/9.4.22.v20191022
+2020-03-13T15:42:44,616 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.proxy/9.4.22.v20191022
+2020-03-13T15:42:44,617 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.geronimo.specs.geronimo-jaspic_1.0_spec/1.1.0
+2020-03-13T15:42:44,620 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.security.jaspi/9.4.22.v20191022
+2020-03-13T15:42:44,621 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   javax.annotation-api/1.3.0
+2020-03-13T15:42:44,623 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.rewrite/9.4.22.v20191022
+2020-03-13T15:42:44,624 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.util.ajax/9.4.22.v20191022
+2020-03-13T15:42:44,626 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.felix.inventory/1.0.6
+2020-03-13T15:42:44,632 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.ops4j.pax.web.pax-web-api/7.2.14
+2020-03-13T15:42:44,635 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.webconsole.console/4.2.8
+2020-03-13T15:42:44,707 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.webconsole.gogo/4.2.8
+2020-03-13T15:42:44,712 | INFO  | features-3-thread-1 | GogoPlugin                       | 59 - org.apache.karaf.webconsole.gogo - 4.2.8 | Gogo plugin activated
+2020-03-13T15:42:44,713 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.ops4j.pax.web.pax-web-spi/7.2.14
+2020-03-13T15:42:44,714 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.jaas/9.4.22.v20191022
+2020-03-13T15:42:44,715 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.jndi/9.4.22.v20191022
+2020-03-13T15:42:44,716 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.servlets/9.4.22.v20191022
+2020-03-13T15:42:44,717 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.geronimo.specs.geronimo-jta_1.1_spec/1.1.1
+2020-03-13T15:42:44,718 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.plus/9.4.22.v20191022
+2020-03-13T15:42:44,719 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.eclipse.jetty.continuation/9.4.22.v20191022
+2020-03-13T15:42:44,721 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.ops4j.pax.web.pax-web-jetty/7.2.14
+2020-03-13T15:42:44,768 | INFO  | features-3-thread-1 | log                              | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | Logging initialized @13513ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-03-13T15:42:44,776 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.ops4j.pax.web.pax-web-runtime/7.2.14
+2020-03-13T15:42:44,785 | INFO  | features-3-thread-1 | Activator                        | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | EventAdmin support enabled, servlet events will be postet to topics.
+2020-03-13T15:42:44,787 | INFO  | features-3-thread-1 | Activator                        | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | LogService support enabled, log events will be created.
+2020-03-13T15:42:44,790 | INFO  | features-3-thread-1 | Activator                        | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | Pax Web started
+2020-03-13T15:42:44,854 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.http.core/4.2.8
+2020-03-13T15:42:44,863 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Command registration delayed for bundle org.apache.karaf.http.core/4.2.8. Missing service: [org.apache.karaf.http.core.ProxyService, org.apache.karaf.http.core.ServletService]
+2020-03-13T15:42:44,864 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.webconsole.http/4.2.8
+2020-03-13T15:42:44,872 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.webconsole.http/4.2.8
+2020-03-13T15:42:44,872 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.scr.management/4.2.8
+2020-03-13T15:42:44,883 | INFO  | features-3-thread-1 | ServiceComponentRuntimeMBeanImpl | 55 - org.apache.karaf.scr.management - 4.2.8 | Activating the Apache Karaf ServiceComponentRuntime MBean
+2020-03-13T15:42:44,885 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.webconsole.features/4.2.8
+2020-03-13T15:42:44,893 | INFO  | features-3-thread-1 | FeaturesPlugin                   | 58 - org.apache.karaf.webconsole.features - 4.2.8 | Features plugin activated
+2020-03-13T15:42:44,896 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.felix.webconsole.plugins.memoryusage/1.0.10
+2020-03-13T15:42:44,902 | INFO  | features-3-thread-1 | memoryusage                      | 51 - org.apache.felix.webconsole.plugins.memoryusage - 1.0.10 | Storing Memory Dumps in /Users/chu/Sonoma/apache-karaf-4.2.8/data/cache/bundle51/data/dumps
+2020-03-13T15:42:44,905 | INFO  | features-3-thread-1 | memoryusage                      | 51 - org.apache.felix.webconsole.plugins.memoryusage - 1.0.10 | Setting Automatic Memory Dump Threshold to 0% for pools [Code Cache, Compressed Class Space, Metaspace, PS Old Gen]
+2020-03-13T15:42:44,905 | INFO  | features-3-thread-1 | memoryusage                      | 51 - org.apache.felix.webconsole.plugins.memoryusage - 1.0.10 | Automatic Memory Dump cannot be set for pools [PS Eden Space, PS Survivor Space]
+2020-03-13T15:42:44,905 | INFO  | features-3-thread-1 | memoryusage                      | 51 - org.apache.felix.webconsole.plugins.memoryusage - 1.0.10 | Setting Automatic Memory Dump Interval to 21600 seconds
+2020-03-13T15:42:44,913 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.felix.webconsole.plugins.memoryusage.internal.MemoryUsageConfigurator]) | memoryusage                      | 51 - org.apache.felix.webconsole.plugins.memoryusage - 1.0.10 | Setting Automatic Memory Dump Threshold to 0% for pools [Code Cache, Compressed Class Space, Metaspace, PS Old Gen]
+2020-03-13T15:42:44,914 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.felix.webconsole.plugins.memoryusage.internal.MemoryUsageConfigurator]) | memoryusage                      | 51 - org.apache.felix.webconsole.plugins.memoryusage - 1.0.10 | Automatic Memory Dump cannot be set for pools [PS Eden Space, PS Survivor Space]
+2020-03-13T15:42:44,914 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.felix.webconsole.plugins.memoryusage.internal.MemoryUsageConfigurator]) | memoryusage                      | 51 - org.apache.felix.webconsole.plugins.memoryusage - 1.0.10 | Setting Automatic Memory Dump Interval to 21600 seconds
+2020-03-13T15:42:44,914 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.webconsole.instance/4.2.8
+2020-03-13T15:42:44,914 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.felix.webconsole.plugins.memoryusage.internal.MemoryUsageConfigurator]) | memoryusage                      | 51 - org.apache.felix.webconsole.plugins.memoryusage - 1.0.10 | Storing Memory Dumps in /Users/chu/Sonoma/apache-karaf-4.2.8/data/cache/bundle51/data/dumps
+2020-03-13T15:42:44,921 | INFO  | features-3-thread-1 | InstancePlugin                   | 61 - org.apache.karaf.webconsole.instance - 4.2.8 | Instance plugin activated
+2020-03-13T15:42:44,923 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.webconsole.instance/4.2.8
+2020-03-13T15:42:44,924 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.felix.webconsole.plugins.ds/2.1.0
+2020-03-13T15:42:44,935 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.objectweb.asm/7.2.0
+2020-03-13T15:42:44,936 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.objectweb.asm.tree/7.2.0
+2020-03-13T15:42:44,937 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.objectweb.asm.commons/7.2.0
+2020-03-13T15:42:44,939 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.xbean.bundleutils/4.14.0
+2020-03-13T15:42:44,940 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.xbean.finder/4.14.0
+2020-03-13T15:42:44,943 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Done.
+2020-03-13T15:42:45,013 | INFO  | paxweb-config-1-thread-1 | TypeUtil                         | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | JVM Runtime does not support Modules
+2020-03-13T15:42:45,047 | INFO  | paxweb-config-1-thread-1 | JettyFactoryImpl                 | 88 - org.ops4j.pax.web.pax-web-jetty - 7.2.14 | No ALPN class available
+2020-03-13T15:42:45,047 | INFO  | paxweb-config-1-thread-1 | JettyFactoryImpl                 | 88 - org.ops4j.pax.web.pax-web-jetty - 7.2.14 | HTTP/2 not available, creating standard ServerConnector for Http
+2020-03-13T15:42:45,070 | INFO  | paxweb-config-1-thread-1 | JettyServerImpl                  | 88 - org.ops4j.pax.web.pax-web-jetty - 7.2.14 | Pax Web available at [0.0.0.0]:[8181]
+2020-03-13T15:42:45,078 | INFO  | paxweb-config-1-thread-1 | HttpServiceFactoryImpl           | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | Binding bundle: [org.apache.karaf.webconsole.console [57]] to http service
+2020-03-13T15:42:45,145 | INFO  | paxweb-config-1-thread-1 | HttpServiceContext               | 88 - org.ops4j.pax.web.pax-web-jetty - 7.2.14 | registering context DefaultHttpContext [bundle=org.apache.karaf.webconsole.console [57], contextID=custom], with context-name: 
+2020-03-13T15:42:45,182 | INFO  | paxweb-config-1-thread-1 | session                          | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | DefaultSessionIdManager workerName=node0
+2020-03-13T15:42:45,183 | INFO  | paxweb-config-1-thread-1 | session                          | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | No SessionScavenger set, using defaults
+2020-03-13T15:42:45,184 | INFO  | paxweb-config-1-thread-1 | session                          | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | node0 Scavenging every 660000ms
+2020-03-13T15:42:45,194 | INFO  | paxweb-config-1-thread-1 | ContextHandler                   | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=org.apache.karaf.webconsole.console [57], contextID=custom]}
+2020-03-13T15:42:45,210 | INFO  | paxweb-config-1-thread-1 | Server                           | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | jetty-9.4.22.v20191022; built: 2019-10-22T13:37:13.455Z; git: b1e6b55512e008f7fbdf1cbea4ff8a6446d1073b; jvm 1.8.0_222-b10
+2020-03-13T15:42:45,245 | INFO  | paxweb-config-1-thread-1 | AbstractConnector                | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | Started default@19e9bc94{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2020-03-13T15:42:45,245 | INFO  | paxweb-config-1-thread-1 | Server                           | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | Started @13991ms
+2020-03-13T15:42:45,248 | INFO  | paxweb-config-1-thread-1 | HttpServiceFactoryImpl           | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | Binding bundle: [org.apache.karaf.http.core [54]] to http service
+2020-03-13T15:42:45,259 | INFO  | activator-1-thread-2 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.http.core/4.2.8
+2020-03-13T15:42:45,262 | INFO  | activator-1-thread-2 | HttpPlugin                       | 60 - org.apache.karaf.webconsole.http - 4.2.8 | Http plugin activated
+2020-03-13T15:45:19,398 | WARN  | sshd-SshServer[7b5a9440]-nio2-thread-1 | ServerSessionImpl                | 38 - org.apache.sshd.core - 1.7.0 | exceptionCaught(ServerSessionImpl[null@/127.0.0.1:52457])[state=Opened] IOException: Connection reset by peer
+2020-03-13T15:45:19,434 | WARN  | sshd-SshServer[7b5a9440]-nio2-thread-2 | ServerSessionImpl                | 38 - org.apache.sshd.core - 1.7.0 | exceptionCaught(ServerSessionImpl[null@/127.0.0.1:52458])[state=Opened] IOException: Connection reset by peer
+2020-03-13T15:45:19,460 | WARN  | sshd-SshServer[7b5a9440]-nio2-thread-1 | ServerSessionImpl                | 38 - org.apache.sshd.core - 1.7.0 | exceptionCaught(ServerSessionImpl[null@/127.0.0.1:52459])[state=Opened] IOException: Connection reset by peer
+2020-03-13T15:46:41,516 | ERROR | Karaf local console user karaf | ShellUtil                        | 34 - org.apache.karaf.shell.core - 4.2.8 | Exception caught while executing command
+java.lang.IllegalArgumentException: No matching features for camel/0
+	at org.apache.karaf.features.internal.service.FeaturesServiceImpl.computeFeaturesToAdd(FeaturesServiceImpl.java:835) ~[?:?]
+	at org.apache.karaf.features.internal.service.FeaturesServiceImpl.installFeatures(FeaturesServiceImpl.java:798) ~[?:?]
+	at org.apache.karaf.features.command.InstallFeatureCommand.doExecute(InstallFeatureCommand.java:78) ~[?:?]
+	at org.apache.karaf.features.command.FeaturesCommandSupport.execute(FeaturesCommandSupport.java:40) ~[?:?]
+	at org.apache.karaf.shell.impl.action.command.ActionCommand.execute(ActionCommand.java:84) ~[?:?]
+	at org.apache.karaf.shell.impl.console.osgi.secured.SecuredCommand.execute(SecuredCommand.java:68) ~[?:?]
+	at org.apache.karaf.shell.impl.console.osgi.secured.SecuredCommand.execute(SecuredCommand.java:86) ~[?:?]
+	at org.apache.felix.gogo.runtime.Closure.executeCmd(Closure.java:599) ~[?:?]
+	at org.apache.felix.gogo.runtime.Closure.executeStatement(Closure.java:526) ~[?:?]
+	at org.apache.felix.gogo.runtime.Closure.execute(Closure.java:415) ~[?:?]
+	at org.apache.felix.gogo.runtime.Pipe.doCall(Pipe.java:416) ~[?:?]
+	at org.apache.felix.gogo.runtime.Pipe.call(Pipe.java:229) ~[?:?]
+	at org.apache.felix.gogo.runtime.Pipe.call(Pipe.java:59) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_222]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_222]
+2020-03-13T15:47:21,565 | INFO  | pipe-feature:install camel | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Adding features: camel/[2.24.2,2.24.2]
+2020-03-13T15:47:23,728 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Changes to perform:
+2020-03-13T15:47:23,729 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   Region: root
+2020-03-13T15:47:23,729 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |     Bundles to install:
+2020-03-13T15:47:23,729 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.api/1.0.1
+2020-03-13T15:47:23,729 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.cm/1.3.1
+2020-03-13T15:47:23,729 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.core/1.10.2
+2020-03-13T15:47:23,729 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.core.compatibility/1.0.0
+2020-03-13T15:47:23,729 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.aries.jmx/org.apache.aries.jmx.blueprint.api/1.2.0
+2020-03-13T15:47:23,729 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.aries.jmx/org.apache.aries.jmx.blueprint.core/1.2.0
+2020-03-13T15:47:23,730 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.aries.proxy/org.apache.aries.proxy/1.1.6
+2020-03-13T15:47:23,730 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.camel/camel-blueprint/2.24.2
+2020-03-13T15:47:23,730 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.camel/camel-commands-core/2.24.2
+2020-03-13T15:47:23,730 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.camel/camel-core/2.24.2
+2020-03-13T15:47:23,730 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.camel.karaf/camel-karaf-commands/2.24.2
+2020-03-13T15:47:23,730 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.bundle/org.apache.karaf.bundle.blueprintstate/4.2.8
+2020-03-13T15:47:23,730 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.deployer/org.apache.karaf.deployer.blueprint/4.2.8
+2020-03-13T15:47:23,731 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.jaas.blueprint/org.apache.karaf.jaas.blueprint.config/4.2.8
+2020-03-13T15:47:23,731 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jaxb-impl/2.2.11_1
+2020-03-13T15:47:23,731 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.activation-api-1.1/2.9.0
+2020-03-13T15:47:23,731 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.ow2.asm/asm-analysis/7.2
+2020-03-13T15:47:23,731 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.ow2.asm/asm-util/7.2
+2020-03-13T15:47:23,732 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.codehaus.woodstox/stax2-api/3.1.4
+2020-03-13T15:47:23,732 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.codehaus.woodstox/woodstox-core-asl/4.4.1
+2020-03-13T15:47:23,733 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Installing bundles:
+2020-03-13T15:47:23,733 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.api/1.0.1
+2020-03-13T15:47:23,735 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.cm/1.3.1
+2020-03-13T15:47:23,738 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.core/1.10.2
+2020-03-13T15:47:23,743 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.core.compatibility/1.0.0
+2020-03-13T15:47:23,746 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.aries.jmx/org.apache.aries.jmx.blueprint.api/1.2.0
+2020-03-13T15:47:23,749 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.aries.jmx/org.apache.aries.jmx.blueprint.core/1.2.0
+2020-03-13T15:47:23,752 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.aries.proxy/org.apache.aries.proxy/1.1.6
+2020-03-13T15:47:23,756 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.camel/camel-blueprint/2.24.2
+2020-03-13T15:47:23,761 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.camel/camel-commands-core/2.24.2
+2020-03-13T15:47:23,765 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.camel/camel-core/2.24.2
+2020-03-13T15:47:23,809 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.camel.karaf/camel-karaf-commands/2.24.2
+2020-03-13T15:47:23,813 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.bundle/org.apache.karaf.bundle.blueprintstate/4.2.8
+2020-03-13T15:47:23,815 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.deployer/org.apache.karaf.deployer.blueprint/4.2.8
+2020-03-13T15:47:23,819 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.jaas.blueprint/org.apache.karaf.jaas.blueprint.config/4.2.8
+2020-03-13T15:47:23,822 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jaxb-impl/2.2.11_1
+2020-03-13T15:47:23,836 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.activation-api-1.1/2.9.0
+2020-03-13T15:47:23,840 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.ow2.asm/asm-analysis/7.2
+2020-03-13T15:47:23,844 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.ow2.asm/asm-util/7.2
+2020-03-13T15:47:23,847 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.codehaus.woodstox/stax2-api/3.1.4
+2020-03-13T15:47:23,853 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.codehaus.woodstox/woodstox-core-asl/4.4.1
+2020-03-13T15:47:23,922 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Starting bundles:
+2020-03-13T15:47:23,923 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.servicemix.specs.activation-api-1.1/2.9.0
+2020-03-13T15:47:23,933 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   stax2-api/3.1.4
+2020-03-13T15:47:23,934 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   woodstox-core-asl/4.4.1
+2020-03-13T15:47:23,953 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.servicemix.bundles.jaxb-impl/2.2.11.1
+2020-03-13T15:47:23,955 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.objectweb.asm.tree.analysis/7.2.0
+2020-03-13T15:47:23,957 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.aries.blueprint.api/1.0.1
+2020-03-13T15:47:23,959 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.objectweb.asm.util/7.2.0
+2020-03-13T15:47:23,960 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.aries.proxy/1.1.6
+2020-03-13T15:47:23,972 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.aries.blueprint.core/1.10.2
+2020-03-13T15:47:23,998 | INFO  | features-3-thread-1 | BlueprintExtender                | 95 - org.apache.aries.blueprint.core - 1.10.2 | No quiesce support is available, so blueprint components will not participate in quiesce operations
+2020-03-13T15:47:24,078 | INFO  | features-3-thread-1 | BlueprintContainerImpl           | 95 - org.apache.aries.blueprint.core - 1.10.2 | Blueprint bundle org.apache.aries.blueprint.core/1.10.2 has been started
+2020-03-13T15:47:24,078 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.aries.blueprint.cm/1.3.1
+2020-03-13T15:47:24,088 | INFO  | features-3-thread-1 | BlueprintContainerImpl           | 95 - org.apache.aries.blueprint.core - 1.10.2 | Blueprint bundle org.apache.aries.blueprint.cm/1.3.1 has been started
+2020-03-13T15:47:24,088 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.deployer.blueprint/4.2.8
+2020-03-13T15:47:24,095 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.aries.jmx.blueprint.api/1.2.0
+2020-03-13T15:47:24,096 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.aries.jmx.blueprint.core/1.2.0
+2020-03-13T15:47:24,111 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.jaas.blueprint.config/4.2.8
+2020-03-13T15:47:24,119 | INFO  | features-3-thread-1 | BlueprintContainerImpl           | 95 - org.apache.aries.blueprint.core - 1.10.2 | Blueprint bundle org.apache.karaf.jaas.blueprint.config/4.2.8 has been started
+2020-03-13T15:47:24,120 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.bundle.blueprintstate/4.2.8
+2020-03-13T15:47:24,124 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.camel.camel-core/2.24.2
+2020-03-13T15:47:24,127 | INFO  | features-3-thread-1 | Activator                        | 102 - org.apache.camel.camel-core - 2.24.2 | Camel activator starting
+2020-03-13T15:47:24,132 | INFO  | features-3-thread-1 | Activator                        | 102 - org.apache.camel.camel-core - 2.24.2 | Camel activator started
+2020-03-13T15:47:24,144 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.camel.camel-blueprint/2.24.2
+2020-03-13T15:47:24,153 | INFO  | features-3-thread-1 | BlueprintContainerImpl           | 95 - org.apache.aries.blueprint.core - 1.10.2 | Blueprint bundle org.apache.camel.camel-blueprint/2.24.2 has been started
+2020-03-13T15:47:24,154 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.camel.camel-commands-core/2.24.2
+2020-03-13T15:47:24,156 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.camel.karaf.camel-karaf-commands/2.24.2
+2020-03-13T15:47:24,175 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.camel.karaf.camel-karaf-commands/2.24.2
+2020-03-13T15:47:24,176 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Done.
+2020-03-13T15:49:50,628 | WARN  | pipe-shutdown    | jline                            | 41 - org.jline.terminal - 3.13.2 | The Parser of class org.apache.karaf.shell.impl.console.ConsoleSessionImpl$$Lambda$504/1871835227 does not support the CompletingParsedLine interface. Completion with escaped or quoted words won't work correctly.
+2020-03-13T15:49:56,205 | WARN  | pipe-shutdown    | jline                            | 41 - org.jline.terminal - 3.13.2 | The Parser of class org.apache.karaf.shell.impl.console.ConsoleSessionImpl$$Lambda$504/1871835227 does not support the CompletingParsedLine interface. Completion with escaped or quoted words won't work correctly.
+2020-03-13T15:49:57,245 | INFO  | FelixShutdown    | BlueprintExtender                | 95 - org.apache.aries.blueprint.core - 1.10.2 | Destroying container for blueprint bundle org.apache.camel.camel-blueprint/2.24.2
+2020-03-13T15:49:57,249 | INFO  | FelixShutdown    | BlueprintExtender                | 95 - org.apache.aries.blueprint.core - 1.10.2 | Destroying container for blueprint bundle org.apache.karaf.jaas.blueprint.config/4.2.8
+2020-03-13T15:49:57,251 | INFO  | FelixShutdown    | BlueprintExtender                | 95 - org.apache.aries.blueprint.core - 1.10.2 | Destroying container for blueprint bundle org.apache.aries.blueprint.cm/1.3.1
+2020-03-13T15:49:57,255 | INFO  | FelixShutdown    | BlueprintExtender                | 95 - org.apache.aries.blueprint.core - 1.10.2 | Destroying container for blueprint bundle org.apache.aries.blueprint.core/1.10.2
+2020-03-13T15:49:57,265 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.camel.karaf.camel-karaf-commands/2.24.2
+2020-03-13T15:49:57,268 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.event/4.2.8
+2020-03-13T15:49:57,273 | INFO  | FelixStartLevel  | Activator                        | 102 - org.apache.camel.camel-core - 2.24.2 | Camel activator stopping
+2020-03-13T15:49:57,274 | INFO  | FelixStartLevel  | Activator                        | 102 - org.apache.camel.camel-core - 2.24.2 | Camel activator stopped
+2020-03-13T15:49:57,286 | INFO  | paxweb-config-1-thread-2 | HttpServiceFactoryImpl           | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | Unbinding bundle: [org.apache.karaf.webconsole.console [57]]
+2020-03-13T15:49:57,288 | INFO  | paxweb-config-1-thread-2 | ContextHandler                   | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | Stopped HttpServiceContext{httpContext=DefaultHttpContext [bundle=org.apache.karaf.webconsole.console [57], contextID=custom]}
+2020-03-13T15:49:57,291 | INFO  | paxweb-config-1-thread-2 | HttpServiceFactoryImpl           | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | Unbinding bundle: [org.apache.karaf.http.core [54]]
+2020-03-13T15:49:57,293 | INFO  | activator-1-thread-3 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.http.core/4.2.8
+2020-03-13T15:49:57,297 | INFO  | activator-1-thread-3 | HttpPlugin                       | 60 - org.apache.karaf.webconsole.http - 4.2.8 | Http plugin deactivated
+2020-03-13T15:49:57,301 | INFO  | paxweb-config-1-thread-2 | AbstractConnector                | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | Stopped default@19e9bc94{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2020-03-13T15:49:57,301 | INFO  | paxweb-config-1-thread-2 | session                          | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | node0 Stopped scavenging
+2020-03-13T15:49:57,302 | INFO  | paxweb-config-1-thread-2 | Activator                        | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | ServerControllerFactory is gone, HTTP Service is not available now.
+2020-03-13T15:49:57,304 | INFO  | FelixStartLevel  | Activator                        | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | Pax Web stopped
+2020-03-13T15:49:57,311 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.webconsole.instance/4.2.8
+2020-03-13T15:49:57,312 | INFO  | FelixStartLevel  | InstancePlugin                   | 61 - org.apache.karaf.webconsole.instance - 4.2.8 | Instance plugin deactivated
+2020-03-13T15:49:57,313 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.webconsole.http/4.2.8
+2020-03-13T15:49:57,314 | INFO  | FelixStartLevel  | GogoPlugin                       | 59 - org.apache.karaf.webconsole.gogo - 4.2.8 | Gogo plugin deactivated
+2020-03-13T15:49:57,316 | INFO  | FelixStartLevel  | FeaturesPlugin                   | 58 - org.apache.karaf.webconsole.features - 4.2.8 | Features plugin deactivated
+2020-03-13T15:49:57,328 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.scr.state/4.2.8
+2020-03-13T15:49:57,337 | INFO  | FelixStartLevel  | ServiceComponentRuntimeMBeanImpl | 55 - org.apache.karaf.scr.management - 4.2.8 | Deactivating the Apache Karaf ServiceComponentRuntime MBean
+2020-03-13T15:49:57,351 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.system.core/4.2.8
+2020-03-13T15:49:57,353 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.shell.ssh/4.2.8
+2020-03-13T15:49:57,360 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.kar.core/4.2.8
+2020-03-13T15:49:57,361 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.deployer.kar/4.2.8
+2020-03-13T15:49:57,361 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.shell.commands/4.2.8
+2020-03-13T15:49:57,361 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.instance.core/4.2.8
+2020-03-13T15:49:57,361 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.package.core/4.2.8
+2020-03-13T15:49:57,362 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.jaas.command/4.2.8
+2020-03-13T15:49:57,362 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.diagnostic.core/4.2.8
+2020-03-13T15:49:57,362 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.features.command/4.2.8
+2020-03-13T15:49:57,362 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.service.core/4.2.8
+2020-03-13T15:49:57,363 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.config.core/4.2.8
+2020-03-13T15:49:57,363 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.log.core/4.2.8
+2020-03-13T15:49:57,364 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.bundle.core/4.2.8
+2020-03-13T15:49:57,367 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.framework.PackageStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@9816ca1 with name osgi.core:type=packageState,version=1.5,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:49:57,367 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.framework.FrameworkMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@9816ca1 with name osgi.core:type=framework,version=1.7,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:49:57,368 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.framework.BundleStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@9816ca1 with name osgi.core:type=bundleState,version=1.7,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:49:57,368 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.framework.wiring.BundleWiringStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@9816ca1 with name osgi.core:type=wiringState,version=1.1,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:49:57,368 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.framework.ServiceStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@9816ca1 with name osgi.core:type=serviceState,version=1.7,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:49:57,369 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.service.cm.ConfigurationAdminMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@9816ca1 with name osgi.compendium:service=cm,version=1.3,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902
+2020-03-13T15:49:57,369 | WARN  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Task rejected for JMX Notification dispatch of event [org.osgi.framework.ServiceEvent[source=[javax.management.MBeanServer]]] - Dispatcher may have been shutdown
+2020-03-13T15:49:57,381 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Stopping JMX OSGi agent
+2020-03-13T15:49:57,381 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering MBean with ObjectName [osgi.compendium:service=cm,version=1.3,framework=org.apache.felix.framework,uuid=37211870-f1a9-416a-99bc-f2e8b5699902] for service with service.id [15]
+Mar 13, 2020 4:27:27 PM org.apache.karaf.main.lock.SimpleFileLock lock
+INFO: Trying to lock /Users/chu/Sonoma/apache-karaf-4.2.8/lock
+Mar 13, 2020 4:27:27 PM org.apache.karaf.main.lock.SimpleFileLock lock
+INFO: Lock acquired
+Mar 13, 2020 4:27:27 PM org.apache.karaf.main.Main$KarafLockCallback lockAcquired
+INFO: Lock acquired. Setting startlevel to 100
+2020-03-13T16:27:28,315 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.ops4j.pax.logging]) | EventAdminConfigurationNotifier  | 7 - org.ops4j.pax.logging.pax-logging-log4j2 - 1.11.4 | Sending Event Admin notification (configuration successful) to org/ops4j/pax/logging/Configuration
+2020-03-13T16:27:28,325 | INFO  | FelixStartLevel  | BlueprintContainerImpl           | 95 - org.apache.aries.blueprint.core - 1.10.2 | Blueprint bundle org.apache.aries.blueprint.core/1.10.2 has been started
+2020-03-13T16:27:28,346 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Starting JMX OSGi agent
+2020-03-13T16:27:28,358 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering MBean with ObjectName [osgi.compendium:service=cm,version=1.3,framework=org.apache.felix.framework,uuid=4b486b39-8beb-4c17-b1a4-8a8d369d9a05] for service with service.id [15]
+2020-03-13T16:27:28,437 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.service.cm.ConfigurationAdminMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@d0e2e48 with name osgi.compendium:service=cm,version=1.3,framework=org.apache.felix.framework,uuid=4b486b39-8beb-4c17-b1a4-8a8d369d9a05
+2020-03-13T16:27:28,441 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.PackageStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@d0e2e48 with name osgi.core:type=packageState,version=1.5,framework=org.apache.felix.framework,uuid=4b486b39-8beb-4c17-b1a4-8a8d369d9a05
+2020-03-13T16:27:28,441 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.wiring.BundleWiringStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@d0e2e48 with name osgi.core:type=wiringState,version=1.1,framework=org.apache.felix.framework,uuid=4b486b39-8beb-4c17-b1a4-8a8d369d9a05
+2020-03-13T16:27:28,442 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.FrameworkMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@d0e2e48 with name osgi.core:type=framework,version=1.7,framework=org.apache.felix.framework,uuid=4b486b39-8beb-4c17-b1a4-8a8d369d9a05
+2020-03-13T16:27:28,443 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.ServiceStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@d0e2e48 with name osgi.core:type=serviceState,version=1.7,framework=org.apache.felix.framework,uuid=4b486b39-8beb-4c17-b1a4-8a8d369d9a05
+2020-03-13T16:27:28,445 | INFO  | activator-1-thread-1 | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Registering org.osgi.jmx.framework.BundleStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@d0e2e48 with name osgi.core:type=bundleState,version=1.7,framework=org.apache.felix.framework,uuid=4b486b39-8beb-4c17-b1a4-8a8d369d9a05
+2020-03-13T16:27:28,488 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.bundle.core/4.2.8
+2020-03-13T16:27:28,499 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.config.core/4.2.8
+2020-03-13T16:27:28,528 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.deployer.kar/4.2.8
+2020-03-13T16:27:28,529 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.diagnostic.core/4.2.8
+2020-03-13T16:27:28,548 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Command registration delayed for bundle org.apache.karaf.features.command/4.2.8. Missing service: [org.apache.karaf.features.FeaturesService]
+2020-03-13T16:27:28,556 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.instance.core/4.2.8
+2020-03-13T16:27:28,569 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.jaas.command/4.2.8
+2020-03-13T16:27:28,571 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Updating commands for bundle org.apache.karaf.jaas.command/4.2.8
+2020-03-13T16:27:28,572 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Updating commands for bundle org.apache.karaf.jaas.command/4.2.8
+2020-03-13T16:27:28,576 | INFO  | activator-1-thread-2 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.features.command/4.2.8
+2020-03-13T16:27:28,577 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Command registration delayed for bundle org.apache.karaf.kar.core/4.2.8. Missing service: [org.apache.karaf.kar.KarService]
+2020-03-13T16:27:28,580 | INFO  | activator-1-thread-2 | Activator                        | 18 - org.apache.karaf.deployer.features - 4.2.8 | Deployment finished. Registering FeatureDeploymentListener
+2020-03-13T16:27:28,582 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.log.core/4.2.8
+2020-03-13T16:27:28,583 | INFO  | activator-1-thread-2 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.kar.core/4.2.8
+2020-03-13T16:27:28,584 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.package.core/4.2.8
+2020-03-13T16:27:28,587 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.service.core/4.2.8
+2020-03-13T16:27:28,597 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.shell.commands/4.2.8
+2020-03-13T16:27:28,927 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Command registration delayed for bundle org.apache.karaf.shell.ssh/4.2.8. Missing service: [org.apache.sshd.server.SshServer]
+2020-03-13T16:27:28,941 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.system.core/4.2.8
+2020-03-13T16:27:29,008 | INFO  | activator-1-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.shell.ssh/4.2.8
+2020-03-13T16:27:29,032 | INFO  | FelixStartLevel  | memoryusage                      | 51 - org.apache.felix.webconsole.plugins.memoryusage - 1.0.10 | Storing Memory Dumps in /Users/chu/Sonoma/apache-karaf-4.2.8/data/cache/bundle51/data/dumps
+2020-03-13T16:27:29,034 | INFO  | FelixStartLevel  | memoryusage                      | 51 - org.apache.felix.webconsole.plugins.memoryusage - 1.0.10 | Setting Automatic Memory Dump Threshold to 0% for pools [Code Cache, Compressed Class Space, Metaspace, PS Old Gen]
+2020-03-13T16:27:29,035 | INFO  | FelixStartLevel  | memoryusage                      | 51 - org.apache.felix.webconsole.plugins.memoryusage - 1.0.10 | Automatic Memory Dump cannot be set for pools [PS Eden Space, PS Survivor Space]
+2020-03-13T16:27:29,035 | INFO  | FelixStartLevel  | memoryusage                      | 51 - org.apache.felix.webconsole.plugins.memoryusage - 1.0.10 | Setting Automatic Memory Dump Interval to 21600 seconds
+2020-03-13T16:27:29,042 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.felix.webconsole.plugins.memoryusage.internal.MemoryUsageConfigurator]) | memoryusage                      | 51 - org.apache.felix.webconsole.plugins.memoryusage - 1.0.10 | Setting Automatic Memory Dump Threshold to 0% for pools [Code Cache, Compressed Class Space, Metaspace, PS Old Gen]
+2020-03-13T16:27:29,042 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.felix.webconsole.plugins.memoryusage.internal.MemoryUsageConfigurator]) | memoryusage                      | 51 - org.apache.felix.webconsole.plugins.memoryusage - 1.0.10 | Automatic Memory Dump cannot be set for pools [PS Eden Space, PS Survivor Space]
+2020-03-13T16:27:29,043 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.felix.webconsole.plugins.memoryusage.internal.MemoryUsageConfigurator]) | memoryusage                      | 51 - org.apache.felix.webconsole.plugins.memoryusage - 1.0.10 | Setting Automatic Memory Dump Interval to 21600 seconds
+2020-03-13T16:27:29,043 | INFO  | CM Configuration Updater (ManagedService Update: pid=[org.apache.felix.webconsole.plugins.memoryusage.internal.MemoryUsageConfigurator]) | memoryusage                      | 51 - org.apache.felix.webconsole.plugins.memoryusage - 1.0.10 | Storing Memory Dumps in /Users/chu/Sonoma/apache-karaf-4.2.8/data/cache/bundle51/data/dumps
+2020-03-13T16:27:29,053 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Command registration delayed for bundle org.apache.karaf.http.core/4.2.8. Missing service: [org.apache.karaf.http.core.ProxyService, org.apache.karaf.http.core.ServletService]
+2020-03-13T16:27:29,104 | INFO  | FelixStartLevel  | ServiceComponentRuntimeMBeanImpl | 55 - org.apache.karaf.scr.management - 4.2.8 | Activating the Apache Karaf ServiceComponentRuntime MBean
+2020-03-13T16:27:29,111 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.scr.state/4.2.8
+2020-03-13T16:27:29,166 | INFO  | FelixStartLevel  | FeaturesPlugin                   | 58 - org.apache.karaf.webconsole.features - 4.2.8 | Features plugin activated
+2020-03-13T16:27:29,170 | INFO  | FelixStartLevel  | GogoPlugin                       | 59 - org.apache.karaf.webconsole.gogo - 4.2.8 | Gogo plugin activated
+2020-03-13T16:27:29,175 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.webconsole.http/4.2.8
+2020-03-13T16:27:29,179 | INFO  | FelixStartLevel  | InstancePlugin                   | 61 - org.apache.karaf.webconsole.instance - 4.2.8 | Instance plugin activated
+2020-03-13T16:27:29,180 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.webconsole.instance/4.2.8
+2020-03-13T16:27:29,231 | INFO  | FelixStartLevel  | log                              | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | Logging initialized @2409ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-03-13T16:27:29,239 | INFO  | FelixStartLevel  | Activator                        | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | EventAdmin support enabled, servlet events will be postet to topics.
+2020-03-13T16:27:29,240 | INFO  | FelixStartLevel  | Activator                        | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | LogService support enabled, log events will be created.
+2020-03-13T16:27:29,241 | INFO  | FelixStartLevel  | Activator                        | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | Pax Web started
+2020-03-13T16:27:29,270 | INFO  | FelixStartLevel  | BlueprintContainerImpl           | 95 - org.apache.aries.blueprint.core - 1.10.2 | Blueprint bundle org.apache.karaf.jaas.blueprint.config/4.2.8 has been started
+2020-03-13T16:27:29,279 | INFO  | FelixStartLevel  | BlueprintContainerImpl           | 95 - org.apache.aries.blueprint.core - 1.10.2 | Blueprint bundle org.apache.camel.camel-blueprint/2.24.2 has been started
+2020-03-13T16:27:29,282 | INFO  | FelixStartLevel  | Activator                        | 102 - org.apache.camel.camel-core - 2.24.2 | Camel activator starting
+2020-03-13T16:27:29,288 | INFO  | FelixStartLevel  | Activator                        | 102 - org.apache.camel.camel-core - 2.24.2 | Camel activator started
+2020-03-13T16:27:29,311 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.event/4.2.8
+2020-03-13T16:27:29,331 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.camel.karaf.camel-karaf-commands/2.24.2
+2020-03-13T16:27:29,398 | INFO  | paxweb-config-1-thread-1 | TypeUtil                         | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | JVM Runtime does not support Modules
+2020-03-13T16:27:29,427 | INFO  | paxweb-config-1-thread-1 | JettyFactoryImpl                 | 88 - org.ops4j.pax.web.pax-web-jetty - 7.2.14 | No ALPN class available
+2020-03-13T16:27:29,427 | INFO  | paxweb-config-1-thread-1 | JettyFactoryImpl                 | 88 - org.ops4j.pax.web.pax-web-jetty - 7.2.14 | HTTP/2 not available, creating standard ServerConnector for Http
+2020-03-13T16:27:29,447 | INFO  | paxweb-config-1-thread-1 | JettyServerImpl                  | 88 - org.ops4j.pax.web.pax-web-jetty - 7.2.14 | Pax Web available at [0.0.0.0]:[8181]
+2020-03-13T16:27:29,453 | INFO  | paxweb-config-1-thread-1 | HttpServiceFactoryImpl           | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | Binding bundle: [org.apache.karaf.http.core [54]] to http service
+2020-03-13T16:27:29,467 | INFO  | paxweb-config-1-thread-1 | HttpServiceFactoryImpl           | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | Binding bundle: [org.apache.karaf.webconsole.console [57]] to http service
+2020-03-13T16:27:29,472 | INFO  | activator-1-thread-2 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.http.core/4.2.8
+2020-03-13T16:27:29,477 | INFO  | activator-1-thread-2 | HttpPlugin                       | 60 - org.apache.karaf.webconsole.http - 4.2.8 | Http plugin activated
+2020-03-13T16:27:29,515 | INFO  | paxweb-config-1-thread-1 | HttpServiceContext               | 88 - org.ops4j.pax.web.pax-web-jetty - 7.2.14 | registering context DefaultHttpContext [bundle=org.apache.karaf.webconsole.console [57], contextID=custom], with context-name: 
+2020-03-13T16:27:29,543 | INFO  | paxweb-config-1-thread-1 | session                          | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | DefaultSessionIdManager workerName=node0
+2020-03-13T16:27:29,544 | INFO  | paxweb-config-1-thread-1 | session                          | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | No SessionScavenger set, using defaults
+2020-03-13T16:27:29,545 | INFO  | paxweb-config-1-thread-1 | session                          | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | node0 Scavenging every 600000ms
+2020-03-13T16:27:29,553 | INFO  | paxweb-config-1-thread-1 | ContextHandler                   | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | Started HttpServiceContext{httpContext=DefaultHttpContext [bundle=org.apache.karaf.webconsole.console [57], contextID=custom]}
+2020-03-13T16:27:29,558 | INFO  | paxweb-config-1-thread-1 | Server                           | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | jetty-9.4.22.v20191022; built: 2019-10-22T13:37:13.455Z; git: b1e6b55512e008f7fbdf1cbea4ff8a6446d1073b; jvm 1.8.0_222-b10
+2020-03-13T16:27:29,590 | INFO  | paxweb-config-1-thread-1 | AbstractConnector                | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | Started default@776fc12c{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2020-03-13T16:27:29,590 | INFO  | paxweb-config-1-thread-1 | Server                           | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | Started @2768ms
+2020-03-13T16:27:39,165 | ERROR | Karaf local console user karaf | ShellUtil                        | 34 - org.apache.karaf.shell.core - 4.2.8 | Exception caught while executing command
+org.apache.karaf.shell.support.MultiException: Error installing bundles:
+	Unable to install bundle cellar: org.osgi.framework.BundleException: Unable to cache bundle: cellar
+	at org.apache.karaf.shell.support.MultiException.throwIf(MultiException.java:61) ~[?:?]
+	at org.apache.karaf.bundle.command.Install.execute(Install.java:131) ~[?:?]
+	at org.apache.karaf.shell.impl.action.command.ActionCommand.execute(ActionCommand.java:84) ~[?:?]
+	at org.apache.karaf.shell.impl.console.osgi.secured.SecuredCommand.execute(SecuredCommand.java:68) ~[?:?]
+	at org.apache.karaf.shell.impl.console.osgi.secured.SecuredCommand.execute(SecuredCommand.java:86) ~[?:?]
+	at org.apache.felix.gogo.runtime.Closure.executeCmd(Closure.java:599) ~[?:?]
+	at org.apache.felix.gogo.runtime.Closure.executeStatement(Closure.java:526) ~[?:?]
+	at org.apache.felix.gogo.runtime.Closure.execute(Closure.java:415) ~[?:?]
+	at org.apache.felix.gogo.runtime.Pipe.doCall(Pipe.java:416) ~[?:?]
+	at org.apache.felix.gogo.runtime.Pipe.call(Pipe.java:229) ~[?:?]
+	at org.apache.felix.gogo.runtime.Pipe.call(Pipe.java:59) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_222]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_222]
+	Suppressed: java.lang.Exception: Unable to install bundle cellar: org.osgi.framework.BundleException: Unable to cache bundle: cellar
+		at org.apache.karaf.bundle.command.Install.execute(Install.java:98) ~[?:?]
+		at org.apache.karaf.shell.impl.action.command.ActionCommand.execute(ActionCommand.java:84) ~[?:?]
+		at org.apache.karaf.shell.impl.console.osgi.secured.SecuredCommand.execute(SecuredCommand.java:68) ~[?:?]
+		at org.apache.karaf.shell.impl.console.osgi.secured.SecuredCommand.execute(SecuredCommand.java:86) ~[?:?]
+		at org.apache.felix.gogo.runtime.Closure.executeCmd(Closure.java:599) ~[?:?]
+		at org.apache.felix.gogo.runtime.Closure.executeStatement(Closure.java:526) ~[?:?]
+		at org.apache.felix.gogo.runtime.Closure.execute(Closure.java:415) ~[?:?]
+		at org.apache.felix.gogo.runtime.Pipe.doCall(Pipe.java:416) ~[?:?]
+		at org.apache.felix.gogo.runtime.Pipe.call(Pipe.java:229) ~[?:?]
+		at org.apache.felix.gogo.runtime.Pipe.call(Pipe.java:59) ~[?:?]
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_222]
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_222]
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_222]
+		at java.lang.Thread.run(Thread.java:748) [?:1.8.0_222]
+	Caused by: org.osgi.framework.BundleException: Unable to cache bundle: cellar
+		at org.apache.felix.framework.Felix.installBundle(Felix.java:3013) ~[?:?]
+		at org.apache.felix.framework.BundleContextImpl.installBundle(BundleContextImpl.java:167) ~[?:?]
+		at org.apache.karaf.bundle.command.Install.execute(Install.java:84) ~[?:?]
+		... 13 more
+	Caused by: java.net.MalformedURLException: no protocol: cellar
+		at java.net.URL.<init>(URL.java:600) ~[?:1.8.0_222]
+		at org.apache.felix.framework.util.SecureAction.createURL(SecureAction.java:255) ~[?:?]
+		at org.apache.felix.framework.cache.JarRevision.initialize(JarRevision.java:148) ~[?:?]
+		at org.apache.felix.framework.cache.JarRevision.<init>(JarRevision.java:77) ~[?:?]
+		at org.apache.felix.framework.cache.BundleArchive.createRevisionFromLocation(BundleArchive.java:878) ~[?:?]
+		at org.apache.felix.framework.cache.BundleArchive.reviseInternal(BundleArchive.java:550) ~[?:?]
+		at org.apache.felix.framework.cache.BundleArchive.<init>(BundleArchive.java:153) ~[?:?]
+		at org.apache.felix.framework.cache.BundleCache.create(BundleCache.java:277) ~[?:?]
+		at org.apache.felix.framework.Felix.installBundle(Felix.java:3009) ~[?:?]
+		at org.apache.felix.framework.BundleContextImpl.installBundle(BundleContextImpl.java:167) ~[?:?]
+		at org.apache.karaf.bundle.command.Install.execute(Install.java:84) ~[?:?]
+		... 13 more
+2020-03-13T16:27:56,576 | INFO  | pipe-feature:install cellar | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Adding features: cellar/[4.1.3,4.1.3]
+2020-03-13T16:28:02,267 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Changes to perform:
+2020-03-13T16:28:02,267 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   Region: root
+2020-03-13T16:28:02,268 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |     Bundles to install:
+2020-03-13T16:28:02,268 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:com.hazelcast/hazelcast-all/3.9.1
+2020-03-13T16:28:02,269 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:com.eclipsesource.minimal-json/minimal-json/0.9.2
+2020-03-13T16:28:02,269 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.bundle/4.1.3
+2020-03-13T16:28:02,269 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.config/4.1.3
+2020-03-13T16:28:02,270 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.core/4.1.3
+2020-03-13T16:28:02,270 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.features/4.1.3
+2020-03-13T16:28:02,271 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.hazelcast/4.1.3
+2020-03-13T16:28:02,271 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.kar/4.1.3
+2020-03-13T16:28:02,272 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.shell/4.1.3
+2020-03-13T16:28:02,272 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |       mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.utils/4.1.3
+2020-03-13T16:28:02,275 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Installing bundles:
+2020-03-13T16:28:02,275 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:com.hazelcast/hazelcast-all/3.9.1
+2020-03-13T16:28:02,328 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:com.eclipsesource.minimal-json/minimal-json/0.9.2
+2020-03-13T16:28:02,331 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.bundle/4.1.3
+2020-03-13T16:28:02,334 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.config/4.1.3
+2020-03-13T16:28:02,339 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.core/4.1.3
+2020-03-13T16:28:02,343 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.features/4.1.3
+2020-03-13T16:28:02,349 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.hazelcast/4.1.3
+2020-03-13T16:28:02,354 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.kar/4.1.3
+2020-03-13T16:28:02,358 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.shell/4.1.3
+2020-03-13T16:28:02,363 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.utils/4.1.3
+2020-03-13T16:28:02,372 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Creating configuration file /Users/chu/Sonoma/apache-karaf-4.2.8//etc/org.apache.karaf.cellar.groups.cfg
+2020-03-13T16:28:02,554 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Creating configuration file /Users/chu/Sonoma/apache-karaf-4.2.8//etc/org.apache.karaf.cellar.node.cfg
+2020-03-13T16:28:02,740 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Creating configuration file /Users/chu/Sonoma/apache-karaf-4.2.8//etc/hazelcast.xml
+2020-03-13T16:28:02,980 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Starting bundles:
+2020-03-13T16:28:02,986 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.cellar.core/4.1.3
+2020-03-13T16:28:02,996 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Command registration delayed for bundle org.apache.karaf.cellar.core/4.1.3. Missing service: [org.apache.karaf.cellar.core.GroupManager, org.apache.karaf.cellar.core.ClusterManager]
+2020-03-13T16:28:02,997 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   com.hazelcast/3.9.1
+2020-03-13T16:28:03,022 | INFO  | features-3-thread-1 | HazelcastOSGiService             | 114 - com.hazelcast - 3.9.1 | HazelcastOSGiServiceImpl{ownerBundle=com.hazelcast [114], hazelcastInstance=null, active=false, id=3.9.1#OSS} has been registered as OSGI service and activated now
+2020-03-13T16:28:03,024 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.cellar.hazelcast/4.1.3
+2020-03-13T16:28:03,033 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.cellar.hazelcast/4.1.3
+2020-03-13T16:28:03,034 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.cellar.utils/4.1.3
+2020-03-13T16:28:03,044 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.cellar.utils/4.1.3
+2020-03-13T16:28:03,044 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.cellar.shell/4.1.3
+2020-03-13T16:28:03,057 | INFO  | pool-11-thread-1 | XmlConfigLocator                 | 114 - com.hazelcast - 3.9.1 | Loading configuration /Users/chu/Sonoma/apache-karaf-4.2.8/etc/hazelcast.xml from System property 'hazelcast.config'
+2020-03-13T16:28:03,057 | INFO  | pool-11-thread-1 | XmlConfigLocator                 | 114 - com.hazelcast - 3.9.1 | Using configuration file at /Users/chu/Sonoma/apache-karaf-4.2.8/etc/hazelcast.xml
+2020-03-13T16:28:03,059 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Command registration delayed for bundle org.apache.karaf.cellar.shell/4.1.3. Missing service: [org.apache.karaf.cellar.core.GroupManager, org.apache.karaf.cellar.core.ClusterManager, org.apache.karaf.cellar.core.command.ExecutionContext]
+2020-03-13T16:28:03,060 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   minimal-json/0.9.2
+2020-03-13T16:28:03,061 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.cellar.features/4.1.3
+2020-03-13T16:28:03,077 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Command registration delayed for bundle org.apache.karaf.cellar.features/4.1.3. Missing service: [org.apache.karaf.cellar.core.event.EventProducer, org.apache.karaf.cellar.core.GroupManager, org.apache.karaf.cellar.core.ClusterManager]
+2020-03-13T16:28:03,078 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.cellar.config/4.1.3
+2020-03-13T16:28:03,092 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Command registration delayed for bundle org.apache.karaf.cellar.config/4.1.3. Missing service: [org.apache.karaf.cellar.core.event.EventProducer, org.apache.karaf.cellar.core.GroupManager, org.apache.karaf.cellar.core.ClusterManager]
+2020-03-13T16:28:03,092 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.cellar.bundle/4.1.3
+2020-03-13T16:28:03,104 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Command registration delayed for bundle org.apache.karaf.cellar.bundle/4.1.3. Missing service: [org.apache.karaf.cellar.core.event.EventProducer, org.apache.karaf.cellar.core.GroupManager, org.apache.karaf.cellar.core.ClusterManager]
+2020-03-13T16:28:03,104 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 |   org.apache.karaf.cellar.kar/4.1.3
+2020-03-13T16:28:03,112 | INFO  | features-3-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Command registration delayed for bundle org.apache.karaf.cellar.kar/4.1.3. Missing service: [org.apache.karaf.cellar.core.event.EventProducer, org.apache.karaf.cellar.core.GroupManager, org.apache.karaf.cellar.core.ClusterManager]
+2020-03-13T16:28:03,113 | INFO  | features-3-thread-1 | FeaturesServiceImpl              | 11 - org.apache.karaf.features.core - 4.2.8 | Done.
+2020-03-13T16:28:03,124 | WARN  | pool-11-thread-1 | AbstractXmlConfigHelper          | 114 - com.hazelcast - 3.9.1 | Name of the hazelcast schema location incorrect using default
+2020-03-13T16:28:03,240 | INFO  | pool-11-thread-1 | AddressPicker                    | 114 - com.hazelcast - 3.9.1 | [LOCAL] [cellar] [3.9.1] Prefer IPv4 stack is true.
+2020-03-13T16:28:03,245 | INFO  | pool-11-thread-1 | AddressPicker                    | 114 - com.hazelcast - 3.9.1 | [LOCAL] [cellar] [3.9.1] Picked [172.29.2.100]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2020-03-13T16:28:03,254 | INFO  | pool-11-thread-1 | system                           | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] Hazelcast 3.9.1 (20171130 - feca534) starting at [172.29.2.100]:5701
+2020-03-13T16:28:03,255 | INFO  | pool-11-thread-1 | system                           | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] Copyright (c) 2008-2017, Hazelcast, Inc. All Rights Reserved.
+2020-03-13T16:28:03,255 | INFO  | pool-11-thread-1 | system                           | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] Configured Hazelcast Serialization version: 1
+2020-03-13T16:28:03,524 | INFO  | pool-11-thread-1 | BackpressureRegulator            | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] Backpressure is disabled
+2020-03-13T16:28:03,791 | INFO  | pool-11-thread-1 | Node                             | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] Creating MulticastJoiner
+2020-03-13T16:28:03,892 | INFO  | pool-11-thread-1 | OperationExecutorImpl            | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] Starting 12 partition threads and 7 generic threads (1 dedicated for priority tasks)
+2020-03-13T16:28:03,894 | INFO  | pool-11-thread-1 | Diagnostics                      | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-03-13T16:28:03,899 | INFO  | pool-11-thread-1 | LifecycleService                 | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] [172.29.2.100]:5701 is STARTING
+2020-03-13T16:28:05,639 | INFO  | pool-11-thread-1 | system                           | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] Cluster version set to 3.9
+2020-03-13T16:28:05,640 | INFO  | pool-11-thread-1 | ClusterService                   | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] 
+
+Members {size:1, ver:1} [
+	Member [172.29.2.100]:5701 - b6ce49b6-7cf7-4946-b36f-a894bd536c4c this
+]
+
+2020-03-13T16:28:05,655 | INFO  | pool-11-thread-1 | LifecycleService                 | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] [172.29.2.100]:5701 is STARTED
+2020-03-13T16:28:05,685 | INFO  | pool-11-thread-1 | PartitionStateManager            | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] Initializing cluster partition table arrangement...
+2020-03-13T16:28:05,731 | INFO  | pool-11-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.cellar.core/4.1.3
+2020-03-13T16:28:05,735 | INFO  | pool-11-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.cellar.config/4.1.3
+2020-03-13T16:28:05,737 | INFO  | pool-11-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.cellar.kar/4.1.3
+2020-03-13T16:28:05,739 | INFO  | pool-11-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.cellar.features/4.1.3
+2020-03-13T16:28:05,740 | INFO  | pool-11-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.cellar.bundle/4.1.3
+2020-03-13T16:28:05,744 | INFO  | pool-11-thread-1 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Registering commands for bundle org.apache.karaf.cellar.shell/4.1.3
+2020-03-13T16:28:05,748 | WARN  | pool-15-thread-4 | Activator                        | 117 - org.apache.karaf.cellar.config - 4.1.3 | Error starting activator
+java.lang.UnsupportedOperationException: null
+	at java.util.AbstractCollection.add(AbstractCollection.java:262) ~[?:1.8.0_222]
+	at org.apache.karaf.cellar.hazelcast.HazelcastGroupManager.listGroups(HazelcastGroupManager.java:351) ~[!/:?]
+	at org.apache.karaf.cellar.hazelcast.HazelcastGroupManager.listGroups(HazelcastGroupManager.java:380) ~[!/:?]
+	at org.apache.karaf.cellar.hazelcast.HazelcastGroupManager.listLocalGroups(HazelcastGroupManager.java:297) ~[!/:?]
+	at org.apache.karaf.cellar.config.ConfigurationSynchronizer.init(ConfigurationSynchronizer.java:60) ~[!/:?]
+	at org.apache.karaf.cellar.config.internal.osgi.Activator.doStart(Activator.java:110) ~[!/:?]
+	at org.apache.karaf.util.tracker.BaseActivator.run(BaseActivator.java:242) [!/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_222]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_222]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_222]
+2020-03-13T16:28:05,748 | WARN  | pool-16-thread-4 | Activator                        | 116 - org.apache.karaf.cellar.bundle - 4.1.3 | Error starting activator
+java.lang.UnsupportedOperationException: null
+	at java.util.AbstractCollection.add(AbstractCollection.java:262) ~[?:1.8.0_222]
+	at org.apache.karaf.cellar.hazelcast.HazelcastGroupManager.listGroups(HazelcastGroupManager.java:351) ~[!/:?]
+	at org.apache.karaf.cellar.hazelcast.HazelcastGroupManager.listGroups(HazelcastGroupManager.java:380) ~[!/:?]
+	at org.apache.karaf.cellar.hazelcast.HazelcastGroupManager.listLocalGroups(HazelcastGroupManager.java:297) ~[!/:?]
+	at org.apache.karaf.cellar.bundle.BundleSynchronizer.init(BundleSynchronizer.java:64) ~[!/:?]
+	at org.apache.karaf.cellar.bundle.internal.osgi.Activator.doStart(Activator.java:109) ~[!/:?]
+	at org.apache.karaf.util.tracker.BaseActivator.run(BaseActivator.java:242) [!/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_222]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_222]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_222]
+2020-03-13T16:28:05,770 | WARN  | pool-14-thread-4 | Activator                        | 119 - org.apache.karaf.cellar.features - 4.1.3 | Error starting activator
+java.lang.UnsupportedOperationException: null
+	at java.util.AbstractCollection.add(AbstractCollection.java:262) ~[?:1.8.0_222]
+	at org.apache.karaf.cellar.hazelcast.HazelcastGroupManager.listGroups(HazelcastGroupManager.java:351) ~[!/:?]
+	at org.apache.karaf.cellar.hazelcast.HazelcastGroupManager.listGroups(HazelcastGroupManager.java:380) ~[!/:?]
+	at org.apache.karaf.cellar.hazelcast.HazelcastGroupManager.listLocalGroups(HazelcastGroupManager.java:297) ~[!/:?]
+	at org.apache.karaf.cellar.features.FeaturesSynchronizer.init(FeaturesSynchronizer.java:60) ~[!/:?]
+	at org.apache.karaf.cellar.features.internal.osgi.Activator.doStart(Activator.java:121) ~[!/:?]
+	at org.apache.karaf.util.tracker.BaseActivator.run(BaseActivator.java:242) [!/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_222]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_222]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_222]
+2020-03-13T16:28:09,821 | INFO  | fileinstall-/Users/chu/Sonoma/apache-karaf-4.2.8/etc | fileinstall                      | 10 - org.apache.felix.fileinstall - 3.6.4 | Creating configuration from org.apache.karaf.cellar.node.cfg
+2020-03-13T16:28:09,826 | INFO  | fileinstall-/Users/chu/Sonoma/apache-karaf-4.2.8/etc | fileinstall                      | 10 - org.apache.felix.fileinstall - 3.6.4 | Creating configuration from org.apache.karaf.cellar.groups.cfg
+2020-03-13T16:31:23,636 | WARN  | pipe-shutdown    | jline                            | 41 - org.jline.terminal - 3.13.2 | The Parser of class org.apache.karaf.shell.impl.console.ConsoleSessionImpl$$Lambda$507/328343211 does not support the CompletingParsedLine interface. Completion with escaped or quoted words won't work correctly.
+2020-03-13T16:31:24,760 | INFO  | FelixShutdown    | BlueprintExtender                | 95 - org.apache.aries.blueprint.core - 1.10.2 | Destroying container for blueprint bundle org.apache.camel.camel-blueprint/2.24.2
+2020-03-13T16:31:24,762 | INFO  | FelixShutdown    | BlueprintExtender                | 95 - org.apache.aries.blueprint.core - 1.10.2 | Destroying container for blueprint bundle org.apache.karaf.jaas.blueprint.config/4.2.8
+2020-03-13T16:31:24,766 | INFO  | FelixShutdown    | BlueprintExtender                | 95 - org.apache.aries.blueprint.core - 1.10.2 | Destroying container for blueprint bundle org.apache.aries.blueprint.core/1.10.2
+2020-03-13T16:31:24,771 | INFO  | FelixShutdown    | BlueprintExtender                | 95 - org.apache.aries.blueprint.core - 1.10.2 | Destroying container for blueprint bundle org.apache.aries.blueprint.cm/1.3.1
+2020-03-13T16:31:24,778 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.cellar.utils/4.1.3
+2020-03-13T16:31:24,782 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.cellar.shell/4.1.3
+2020-03-13T16:31:24,783 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.cellar.kar/4.1.3
+2020-03-13T16:31:24,786 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.cellar.hazelcast/4.1.3
+2020-03-13T16:31:24,790 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.cellar.config/4.1.3
+2020-03-13T16:31:24,791 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.cellar.features/4.1.3
+2020-03-13T16:31:24,792 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.cellar.bundle/4.1.3
+2020-03-13T16:31:24,793 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.cellar.core/4.1.3
+2020-03-13T16:31:24,810 | INFO  | FelixStartLevel  | LifecycleService                 | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] [172.29.2.100]:5701 is SHUTTING_DOWN
+2020-03-13T16:31:24,811 | INFO  | FelixStartLevel  | MigrationManager                 | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] Shutdown request of [172.29.2.100]:5701 is handled
+2020-03-13T16:31:24,815 | INFO  | FelixStartLevel  | Node                             | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] Shutting down multicast service...
+2020-03-13T16:31:24,817 | INFO  | FelixStartLevel  | Node                             | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] Shutting down connection manager...
+2020-03-13T16:31:24,818 | INFO  | FelixStartLevel  | Node                             | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] Shutting down node engine...
+2020-03-13T16:31:24,831 | INFO  | FelixStartLevel  | NodeExtension                    | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] Destroying node NodeExtension.
+2020-03-13T16:31:24,832 | INFO  | FelixStartLevel  | Node                             | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] Hazelcast Shutdown is completed in 21 ms.
+2020-03-13T16:31:24,833 | INFO  | FelixStartLevel  | LifecycleService                 | 114 - com.hazelcast - 3.9.1 | [172.29.2.100]:5701 [cellar] [3.9.1] [172.29.2.100]:5701 is SHUTDOWN
+2020-03-13T16:31:24,838 | INFO  | FelixStartLevel  | HazelcastOSGiService             | 114 - com.hazelcast - 3.9.1 | HazelcastOSGiServiceImpl{ownerBundle=com.hazelcast [114], hazelcastInstance=null, active=false, id=3.9.1#OSS} has been deregistered as OSGI service and deactivated
+2020-03-13T16:31:24,839 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.camel.karaf.camel-karaf-commands/2.24.2
+2020-03-13T16:31:24,841 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.event/4.2.8
+2020-03-13T16:31:24,844 | INFO  | FelixStartLevel  | Activator                        | 102 - org.apache.camel.camel-core - 2.24.2 | Camel activator stopping
+2020-03-13T16:31:24,845 | INFO  | FelixStartLevel  | Activator                        | 102 - org.apache.camel.camel-core - 2.24.2 | Camel activator stopped
+2020-03-13T16:31:24,852 | INFO  | activator-1-thread-3 | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.http.core/4.2.8
+2020-03-13T16:31:24,853 | INFO  | paxweb-config-1-thread-2 | HttpServiceFactoryImpl           | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | Unbinding bundle: [org.apache.karaf.webconsole.console [57]]
+2020-03-13T16:31:24,856 | INFO  | activator-1-thread-3 | HttpPlugin                       | 60 - org.apache.karaf.webconsole.http - 4.2.8 | Http plugin deactivated
+2020-03-13T16:31:24,856 | INFO  | paxweb-config-1-thread-2 | ContextHandler                   | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | Stopped HttpServiceContext{httpContext=DefaultHttpContext [bundle=org.apache.karaf.webconsole.console [57], contextID=custom]}
+2020-03-13T16:31:24,858 | INFO  | paxweb-config-1-thread-2 | HttpServiceFactoryImpl           | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | Unbinding bundle: [org.apache.karaf.http.core [54]]
+2020-03-13T16:31:24,868 | INFO  | paxweb-config-1-thread-2 | AbstractConnector                | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | Stopped default@776fc12c{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2020-03-13T16:31:24,868 | INFO  | paxweb-config-1-thread-2 | session                          | 80 - org.eclipse.jetty.util - 9.4.22.v20191022 | node0 Stopped scavenging
+2020-03-13T16:31:24,869 | INFO  | paxweb-config-1-thread-2 | Activator                        | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | ServerControllerFactory is gone, HTTP Service is not available now.
+2020-03-13T16:31:24,870 | INFO  | FelixStartLevel  | Activator                        | 89 - org.ops4j.pax.web.pax-web-runtime - 7.2.14 | Pax Web stopped
+2020-03-13T16:31:24,877 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.webconsole.instance/4.2.8
+2020-03-13T16:31:24,878 | INFO  | FelixStartLevel  | InstancePlugin                   | 61 - org.apache.karaf.webconsole.instance - 4.2.8 | Instance plugin deactivated
+2020-03-13T16:31:24,878 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.webconsole.http/4.2.8
+2020-03-13T16:31:24,879 | INFO  | FelixStartLevel  | GogoPlugin                       | 59 - org.apache.karaf.webconsole.gogo - 4.2.8 | Gogo plugin deactivated
+2020-03-13T16:31:24,880 | INFO  | FelixStartLevel  | FeaturesPlugin                   | 58 - org.apache.karaf.webconsole.features - 4.2.8 | Features plugin deactivated
+2020-03-13T16:31:24,893 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.scr.state/4.2.8
+2020-03-13T16:31:24,894 | INFO  | FelixStartLevel  | ServiceComponentRuntimeMBeanImpl | 55 - org.apache.karaf.scr.management - 4.2.8 | Deactivating the Apache Karaf ServiceComponentRuntime MBean
+2020-03-13T16:31:24,904 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.system.core/4.2.8
+2020-03-13T16:31:24,906 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.shell.ssh/4.2.8
+2020-03-13T16:31:24,933 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.instance.core/4.2.8
+2020-03-13T16:31:24,935 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.package.core/4.2.8
+2020-03-13T16:31:24,935 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.bundle.core/4.2.8
+2020-03-13T16:31:24,936 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.deployer.kar/4.2.8
+2020-03-13T16:31:24,936 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.kar.core/4.2.8
+2020-03-13T16:31:24,936 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.jaas.command/4.2.8
+2020-03-13T16:31:24,936 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.config.core/4.2.8
+2020-03-13T16:31:24,937 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.service.core/4.2.8
+2020-03-13T16:31:24,937 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.features.command/4.2.8
+2020-03-13T16:31:24,938 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.log.core/4.2.8
+2020-03-13T16:31:24,938 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.diagnostic.core/4.2.8
+2020-03-13T16:31:24,938 | INFO  | FelixStartLevel  | CommandExtension                 | 34 - org.apache.karaf.shell.core - 4.2.8 | Unregistering commands for bundle org.apache.karaf.shell.commands/4.2.8
+2020-03-13T16:31:24,941 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.service.cm.ConfigurationAdminMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@d0e2e48 with name osgi.compendium:service=cm,version=1.3,framework=org.apache.felix.framework,uuid=4b486b39-8beb-4c17-b1a4-8a8d369d9a05
+2020-03-13T16:31:24,941 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.framework.PackageStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@d0e2e48 with name osgi.core:type=packageState,version=1.5,framework=org.apache.felix.framework,uuid=4b486b39-8beb-4c17-b1a4-8a8d369d9a05
+2020-03-13T16:31:24,942 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.framework.wiring.BundleWiringStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@d0e2e48 with name osgi.core:type=wiringState,version=1.1,framework=org.apache.felix.framework,uuid=4b486b39-8beb-4c17-b1a4-8a8d369d9a05
+2020-03-13T16:31:24,942 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.framework.FrameworkMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@d0e2e48 with name osgi.core:type=framework,version=1.7,framework=org.apache.felix.framework,uuid=4b486b39-8beb-4c17-b1a4-8a8d369d9a05
+2020-03-13T16:31:24,942 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.framework.ServiceStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@d0e2e48 with name osgi.core:type=serviceState,version=1.7,framework=org.apache.felix.framework,uuid=4b486b39-8beb-4c17-b1a4-8a8d369d9a05
+2020-03-13T16:31:24,942 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering org.osgi.jmx.framework.BundleStateMBean to MBeanServer org.apache.karaf.management.internal.EventAdminMBeanServerWrapper@d0e2e48 with name osgi.core:type=bundleState,version=1.7,framework=org.apache.felix.framework,uuid=4b486b39-8beb-4c17-b1a4-8a8d369d9a05
+2020-03-13T16:31:24,943 | WARN  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Task rejected for JMX Notification dispatch of event [org.osgi.framework.ServiceEvent[source=[javax.management.MBeanServer]]] - Dispatcher may have been shutdown
+2020-03-13T16:31:24,955 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Stopping JMX OSGi agent
+2020-03-13T16:31:24,955 | INFO  | FelixStartLevel  | core                             | 13 - org.apache.aries.jmx.core - 1.1.8 | Unregistering MBean with ObjectName [osgi.compendium:service=cm,version=1.3,framework=org.apache.felix.framework,uuid=4b486b39-8beb-4c17-b1a4-8a8d369d9a05] for service with service.id [15]
