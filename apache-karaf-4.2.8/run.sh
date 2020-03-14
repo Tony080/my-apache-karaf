@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./bin/start
+./bin/karaf && tail -f /dev/null
