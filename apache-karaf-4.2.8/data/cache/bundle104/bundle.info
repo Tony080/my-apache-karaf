@@ -1,6 +1,6 @@
 104
-mvn:org.apache.karaf.bundle/org.apache.karaf.bundle.blueprintstate/4.2.8
+mvn:org.eclipse.jetty/jetty-util-ajax/9.4.22.v20191022
 32
 30
-1584139643814
+1584488029433
 0

@@ -1,6 +1,6 @@
 78
-mvn:org.eclipse.jetty/jetty-servlet/9.4.22.v20191022
+mvn:org.apache.karaf.scr/org.apache.karaf.scr.management/4.2.8
 32
 30
-1584139364180
+1584488029192
 0

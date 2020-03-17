@@ -1,6 +1,6 @@
 80
-mvn:org.eclipse.jetty/jetty-util/9.4.22.v20191022
+mvn:org.apache.karaf.webconsole/org.apache.karaf.webconsole.console/4.2.8
 32
 30
-1584139364189
+1584488029205
 0

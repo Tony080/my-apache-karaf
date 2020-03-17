@@ -1,6 +1,6 @@
 105
-mvn:org.apache.karaf.deployer/org.apache.karaf.deployer.blueprint/4.2.8
+mvn:org.eclipse.jetty/jetty-webapp/9.4.22.v20191022
 32
-24
-1584139643816
+30
+1584488029441
 0

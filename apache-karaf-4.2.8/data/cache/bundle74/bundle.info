@@ -1,6 +1,6 @@
 74
-mvn:org.eclipse.jetty/jetty-rewrite/9.4.22.v20191022
+mvn:org.apache.felix/org.apache.felix.webconsole.plugins.memoryusage/1.0.10
 32
 30
-1584139364157
+1584488029144
 0

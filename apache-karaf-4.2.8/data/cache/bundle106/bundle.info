@@ -1,6 +1,6 @@
 106
-mvn:org.apache.karaf.jaas.blueprint/org.apache.karaf.jaas.blueprint.config/4.2.8
+mvn:org.eclipse.jetty/jetty-xml/9.4.22.v20191022
 32
 30
-1584139643820
+1584488029451
 0

@@ -1,6 +1,6 @@
 107
-mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jaxb-impl/2.2.11_1
+mvn:org.ops4j.pax.web/pax-web-api/7.2.14
 32
-10
-1584139643822
+30
+1584488029459
 0

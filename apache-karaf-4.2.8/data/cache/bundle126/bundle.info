@@ -1,6 +1,6 @@
 126
-mvn:com.fasterxml.jackson.core/jackson-databind/2.7.7
+mvn:com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.7.7
 32
 80
-1584383274912
+1584488103199
 0

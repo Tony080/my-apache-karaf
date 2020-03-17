@@ -1,6 +1,6 @@
 73
-mvn:org.eclipse.jetty/jetty-proxy/9.4.22.v20191022
+mvn:org.apache.felix/org.apache.felix.webconsole.plugins.event/1.1.8
 32
 30
-1584139364152
+1584488029137
 0

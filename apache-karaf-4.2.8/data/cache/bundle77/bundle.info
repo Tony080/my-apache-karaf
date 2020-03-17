@@ -1,6 +1,6 @@
 77
-mvn:org.eclipse.jetty/jetty-server/9.4.22.v20191022
+mvn:org.apache.karaf.http/org.apache.karaf.http.core/4.2.8
 32
 30
-1584139364171
+1584488029167
 0

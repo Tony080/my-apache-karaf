@@ -1,6 +1,6 @@
 128
-mvn:io.fabric8/kubernetes-client/3.1.0/jar/bundle
+mvn:io.fabric8/kubernetes-model/2.0.4
 32
 80
-1584383274928
+1584488103219
 0

@@ -1,6 +1,6 @@
 44
-mvn:javax.annotation/javax.annotation-api/1.3
+mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.api/1.0.1
 32
-30
-1584139364001
+20
+1584488011648
 0

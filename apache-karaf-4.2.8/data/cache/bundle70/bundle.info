@@ -1,6 +1,6 @@
 70
-mvn:org.eclipse.jetty/jetty-jmx/9.4.22.v20191022
+mvn:org.apache.felix/org.apache.felix.inventory/1.0.6
 32
 30
-1584139364140
+1584488029115
 0

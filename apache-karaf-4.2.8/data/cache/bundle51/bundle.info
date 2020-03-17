@@ -1,6 +1,6 @@
 51
-mvn:org.apache.felix/org.apache.felix.webconsole.plugins.memoryusage/1.0.10
+mvn:org.apache.camel/camel-blueprint/2.24.2
 32
-30
-1584139364032
+50
+1584488011700
 0

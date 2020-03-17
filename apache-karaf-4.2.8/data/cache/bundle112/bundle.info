@@ -1,6 +1,6 @@
 112
-mvn:org.codehaus.woodstox/woodstox-core-asl/4.4.1
+mvn:org.osgi/org.osgi.util.promise/1.0.0
 32
-10
-1584139643854
+30
+1584488029513
 0

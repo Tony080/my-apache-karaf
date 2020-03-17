@@ -1,6 +1,6 @@
 71
-mvn:org.eclipse.jetty/jetty-jndi/9.4.22.v20191022
+mvn:org.apache.felix/org.apache.felix.scr/2.1.16
 32
 30
-1584139364144
+1584488029120
 0

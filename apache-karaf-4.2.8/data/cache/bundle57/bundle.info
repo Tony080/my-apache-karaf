@@ -1,6 +1,6 @@
 57
-mvn:org.apache.karaf.webconsole/org.apache.karaf.webconsole.console/4.2.8
+mvn:org.apache.karaf.jaas.blueprint/org.apache.karaf.jaas.blueprint.config/4.2.8
 32
 30
-1584139364068
+1584488011793
 0

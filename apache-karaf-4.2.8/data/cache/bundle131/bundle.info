@@ -1,6 +1,6 @@
 131
-mvn:javax.validation/validation-api/1.1.0.Final
+mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.kubernetes/4.1.3
 32
 80
-1584383274994
+1584488103289
 0

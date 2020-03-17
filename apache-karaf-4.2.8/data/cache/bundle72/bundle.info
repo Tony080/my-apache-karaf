@@ -1,6 +1,6 @@
 72
-mvn:org.eclipse.jetty/jetty-plus/9.4.22.v20191022
+mvn:org.apache.felix/org.apache.felix.webconsole.plugins.ds/2.1.0
 32
 30
-1584139364148
+1584488029130
 0

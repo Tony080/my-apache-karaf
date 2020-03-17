@@ -1,6 +1,6 @@
 97
-mvn:org.apache.aries.jmx/org.apache.aries.jmx.blueprint.api/1.2.0
+mvn:org.eclipse.jetty/jetty-rewrite/9.4.22.v20191022
 32
 30
-1584139643747
+1584488029359
 0

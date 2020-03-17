@@ -1,6 +1,6 @@
 75
-mvn:org.eclipse.jetty/jetty-security/9.4.22.v20191022
+mvn:org.apache.geronimo.specs/geronimo-jaspic_1.0_spec/1.1
 32
 30
-1584139364161
+1584488029152
 0

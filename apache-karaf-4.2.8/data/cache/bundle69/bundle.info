@@ -1,6 +1,6 @@
 69
-mvn:org.eclipse.jetty/jetty-jaas/9.4.22.v20191022
+mvn:org.apache.aries.spifly/org.apache.aries.spifly.dynamic.bundle/1.2.3
 32
 30
-1584139364133
+1584488029105
 0

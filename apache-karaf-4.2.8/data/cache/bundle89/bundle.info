@@ -1,6 +1,6 @@
 89
-mvn:org.ops4j.pax.web/pax-web-runtime/7.2.14
+mvn:org.eclipse.jetty/jetty-deploy/9.4.22.v20191022
 32
 30
-1584139364238
+1584488029295
 0

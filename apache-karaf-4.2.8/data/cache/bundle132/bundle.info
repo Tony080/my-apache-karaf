@@ -1,6 +1,6 @@
 132
-mvn:org.apache.karaf.cellar/org.apache.karaf.cellar.kubernetes/4.1.3
+mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.automaton/1.11-8_1
 32
 80
-1584383274998
+1584488103293
 0

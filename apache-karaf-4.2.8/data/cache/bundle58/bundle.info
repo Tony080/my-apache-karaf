@@ -1,6 +1,6 @@
 58
-mvn:org.apache.karaf.webconsole/org.apache.karaf.webconsole.features/4.2.8
+mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jaxb-impl/2.2.11_1
 32
-30
-1584139364079
+10
+1584488011799
 0

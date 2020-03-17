@@ -1,6 +1,6 @@
 108
-mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.activation-api-1.1/2.9.0
+mvn:org.ops4j.pax.web/pax-web-jetty/7.2.14
 32
-10
-1584139643837
+30
+1584488029465
 0

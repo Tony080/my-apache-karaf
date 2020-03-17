@@ -1,6 +1,6 @@
 102
-mvn:org.apache.camel/camel-core/2.24.2
+mvn:org.eclipse.jetty/jetty-servlets/9.4.22.v20191022
 32
-50
-1584139643766
+30
+1584488029406
 0

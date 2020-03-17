@@ -1,6 +1,6 @@
 76
-mvn:org.eclipse.jetty/jetty-jaspi/9.4.22.v20191022
+mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1
 32
-30
-1584139364166
+80
+1584488029159
 0

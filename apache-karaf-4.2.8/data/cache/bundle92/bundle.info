@@ -1,6 +1,6 @@
 92
-mvn:org.osgi/org.osgi.util.promise/1.0.0
+mvn:org.eclipse.jetty/jetty-jaas/9.4.22.v20191022
 32
 30
-1584139364254
+1584488029322
 0

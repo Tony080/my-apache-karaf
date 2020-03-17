@@ -1,6 +1,6 @@
 54
-mvn:org.apache.karaf.http/org.apache.karaf.http.core/4.2.8
+mvn:org.apache.camel.karaf/camel-karaf-commands/2.24.2
 32
-30
-1584139364045
+80
+1584488011776
 0
