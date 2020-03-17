@@ -21,7 +21,10 @@
                 <multicast-group>224.2.2.3</multicast-group>
                 <multicast-port>54327</multicast-port>
             </multicast>
-            <tcp-ip enabled="true">
+            <kubernetes enabled="true" >
+                <service-dns>tony-karaf-service-internal.sonoma</service-dns>
+            </kubernetes>
+            <tcp-ip enabled="false">
             </tcp-ip>
             <aws enabled="false">
                 <access-key>my-access-key</access-key>
