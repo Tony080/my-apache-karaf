@@ -10,4 +10,4 @@ RUN kubectl version --client
 
 EXPOSE 8181 5701 54327 8080
 WORKDIR /apache-karaf-4.2.8
-CMD kubectl proxy --port=8080 & ; /apache-karaf-4.2.8/bin/karaf server
+CMD ["/apache-karaf-4.2.8/start.sh"]
