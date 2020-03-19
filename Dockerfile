@@ -7,6 +7,7 @@ RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s 
 RUN chmod +x ./kubectl
 RUN mv ./kubectl /usr/local/bin/kubectl
 RUN kubectl version --client
+
 EXPOSE 8181 5701 54327 8080
 WORKDIR /apache-karaf-4.2.8
-CMD ["/apache-karaf-4.2.8/start.sh"]
+CMD kubectl proxy --port=8080 & ; /apache-karaf-4.2.8/bin/karaf server

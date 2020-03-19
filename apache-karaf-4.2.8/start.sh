@@ -1,2 +1,4 @@
-kubectl proxy --port=8080 &
-./bin/karaf server
+#!/bin/bash
+
+./bin/start
+kubectl proxy --port=8080
